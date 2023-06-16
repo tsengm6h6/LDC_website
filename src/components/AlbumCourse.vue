@@ -4,7 +4,7 @@
       <div
         v-for="(course, i) in data"
         :key="`image-${i}-${course.src}`"
-        class="col-span-full overflow-hidden rounded-tl-30 sm:col-span-3 lg:col-span-2">
+        class="col-span-full overflow-hidden rounded sm:col-span-3 lg:col-span-2">
         <HoverImage v-bind="course" />
       </div>
     </div>

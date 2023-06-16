@@ -13,9 +13,11 @@
       v-if="showMenu"
       class="absolute left-0 top-[100%] z-10 w-full bg-main-bg-white py-2 text-main-dark shadow-sm">
       <li v-for="(sub, i) in subMenu" :key="`submenu-${i}-${sub.title}`" class="">
-        <NuxtLink :to="sub._path" class="inline-block w-full px-4 py-2 hover:bg-main-gray">{{
-          sub.title
-        }}</NuxtLink>
+        <NuxtLink
+          :to="sub._path"
+          class="inline-block w-full px-4 py-2 transition-colors duration-300 hover:bg-main-gray"
+          >{{ sub.title }}</NuxtLink
+        >
       </li>
     </ul>
   </button>

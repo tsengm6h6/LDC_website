@@ -6,7 +6,7 @@
       <li
         v-for="(t, i) in tabList"
         :key="`tab-${i}-${t.name}`"
-        :class="`relative top-[0.125rem] cursor-pointer border-b-4 px-2 py-2 text-center transition-all hover:text-[#8A6659] md:px-4 ${
+        :class="`relative top-[0.125rem] cursor-pointer border-b-4 px-2 py-2 text-center transition-all duration-300 hover:text-[#8A6659] md:px-4 ${
           tab === t.key ? 'border-b-highlight' : 'border-b-transparent'
         }`"
         @click="changeTab(t.key)">

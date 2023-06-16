@@ -27,7 +27,7 @@
                     :key="`nav-item-${i}-${j}-${c.title}`"
                     class="text-center">
                     <NuxtLink
-                      class="inline-block px-2 py-3 hover:text-primary"
+                      class="inline-block px-2 py-3 transition-colors duration-300 hover:text-primary"
                       :to="c._path"
                       @click="showSubMenu = false"
                       >{{ c.title }}</NuxtLink
@@ -59,7 +59,7 @@
         <!-- Close -->
         <div class="flex justify-end p-4">
           <button
-            class="text-2xl text-secondary hover:text-secondary-dark"
+            class="text-2xl text-secondary transition-colors duration-300 hover:text-secondary-dark"
             @click="isMenuToggled = false">
             ×
           </button>
@@ -71,12 +71,12 @@
               <NuxtLink
                 v-if="!n.children"
                 :to="n._path"
-                class="cursor-pointer pr-4 hover:text-secondary-dark"
+                class="cursor-pointer pr-4 transition-colors duration-300 hover:text-secondary-dark"
                 >{{ n.title }}</NuxtLink
               >
               <div v-else class="mx-auto text-center">
                 <label
-                  class="main-nav relative cursor-pointer hover:text-secondary-dark"
+                  class="main-nav relative cursor-pointer transition-colors duration-300 hover:text-secondary-dark"
                   @click="toggleSubMenu(i)">
                   {{ n.title }}
                   <span
@@ -97,9 +97,11 @@
                     v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
                     :key="`nav-item-${i}-${j}-${c.title}`"
                     class="bg-secondary py-3 text-main-bg-white">
-                    <NuxtLink :to="c._path" class="cursor-pointer pr-4 hover:text-secondary-dark">{{
-                      c.title
-                    }}</NuxtLink>
+                    <NuxtLink
+                      :to="c._path"
+                      class="cursor-pointer pr-4 transition-colors duration-300 hover:text-secondary-dark"
+                      >{{ c.title }}</NuxtLink
+                    >
                   </li>
                 </ul>
               </div>

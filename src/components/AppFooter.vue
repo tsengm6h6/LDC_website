@@ -27,15 +27,20 @@
           class="ml-5 mt-8 hidden flex-col text-base sm:mt-0 sm:flex sm:w-2/3 sm:flex-row sm:items-start sm:justify-around">
           <!-- 體驗 -->
           <div v-for="(n, i) in nav" :key="`nav-group-${i}-${n.title}`" class="">
-            <h5 class="mb-2 font-bold">{{ n.title }}</h5>
-            <ul v-if="n.children" class="text-main-gray sm:block">
-              <li
-                v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
-                :key="`nav-child-${j}-${c.title}`"
-                class="hover:text-main-bg-white">
-                <NuxtLink :to="c._path">{{ c.title }}</NuxtLink>
-              </li>
-            </ul>
+            <h5 v-if="!n.children" class="mb-2 font-bold">
+              <NuxtLink :to="n._path">{{ n.title }}</NuxtLink>
+            </h5>
+            <template v-else>
+              <h5 class="mb-2 font-bold">{{ n.title }}</h5>
+              <ul v-if="n.children" class="text-main-gray sm:block">
+                <li
+                  v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
+                  :key="`nav-child-${j}-${c.title}`"
+                  class="transition-colors duration-300 hover:text-main-bg-white">
+                  <NuxtLink :to="c._path">{{ c.title }}</NuxtLink>
+                </li>
+              </ul>
+            </template>
           </div>
         </div>
       </div>

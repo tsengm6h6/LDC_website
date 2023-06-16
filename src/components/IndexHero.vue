@@ -27,17 +27,17 @@
             class="animate__animated animate__fadeIn btn btn-primary btn-lg group relative mt-12 w-full animate-bounce md:mt-12 md:w-auto"
             @click="emit('scroll-to', 'feature')">
             <span
-              class="triangle absolute group-hover:border-b-[#2f9e9e]"
+              class="triangle absolute transition-colors duration-300 group-hover:border-b-[#2f9e9e]"
               aria-hidden="true"></span>
             查看更多
           </button>
           <div class="mt-12 hidden items-center md:flex md:gap-2 lg:gap-4">
             <span
-              class="relative mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md hover:bottom-1">
+              class="mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:transform">
               <Icon name="mdi:diving-scuba-mask" size="32px" color="#abaaaa" />
             </span>
             <span
-              class="relative mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md hover:bottom-1">
+              class="mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:transform">
               <Icon
                 name="game-icons:mountain-climbing"
                 size="45px"
@@ -45,11 +45,11 @@
                 class="relative -right-2 -top-[1px]" />
             </span>
             <span
-              class="relative mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md hover:bottom-1">
+              class="mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:transform">
               <Icon name="ic:round-scuba-diving" size="32px" color="#abaaaa" />
             </span>
             <span
-              class="relative mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md hover:bottom-1">
+              class="mr-2 flex h-12 w-12 min-w-[48px] items-center justify-center overflow-hidden rounded-full bg-main-bg-gray text-white shadow-md transition-transform duration-200 hover:-translate-y-1 hover:transform">
               <Icon name="mdi:diving-scuba-tank" size="32px" color="#abaaaa" />
             </span>
           </div>

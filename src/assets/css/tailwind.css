@@ -40,18 +40,18 @@ h4 {
     @apply px-16 py-2 text-base tracking-wide md:text-xl;
   }
   .btn-primary {
-    @apply border-primary bg-primary text-white hover:border-[#2F9E9E] hover:bg-[#2F9E9E];
+    @apply border-primary bg-primary text-white transition-colors duration-300 hover:border-[#2F9E9E] hover:bg-[#2F9E9E];
   }
 
   .btn-secondary {
-    @apply border-secondary bg-secondary text-white hover:border-[#EDBFAE] hover:bg-[#EDBFAE] hover:text-[#8A6659];
+    @apply border-secondary bg-secondary text-white transition-colors duration-300 hover:border-[#EDBFAE] hover:bg-[#EDBFAE] hover:text-[#8A6659];
   }
 
   .btn-highlight {
-    @apply border-highlight bg-highlight text-main-dark hover:border-[#EDBFAE] hover:bg-[#EDBFAE] hover:text-[#8A6659];
+    @apply border-highlight bg-highlight text-main-dark transition-colors duration-300 hover:border-[#EDBFAE] hover:bg-[#EDBFAE] hover:text-[#8A6659];
   }
 
   .btn-primary-outlined {
-    @apply border-primary bg-transparent text-primary hover:bg-primary hover:text-white;
+    @apply border-primary bg-transparent transition-colors duration-300 text-primary hover:bg-primary hover:text-white;
   }
 }

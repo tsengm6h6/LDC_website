@@ -5,7 +5,7 @@
       <li
         v-for="(sub, i) in subMenu"
         :key="`submenu-${i}-${sub.title}`"
-        class="px-4 py-2 hover:text-primary"
+        class="px-4 py-2 transition-colors duration-300 hover:text-primary"
         :class="{ 'text-primary': sub._path === path }">
         <NuxtLink :to="sub._path">{{ sub.title }}</NuxtLink>
       </li>
