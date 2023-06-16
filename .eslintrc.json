@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "@nuxtjs/eslint-config-typescript",
+    "prettier"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off", // Nuxt3 有一些元件都會是單一名稱，例如404，所以最好是關掉
+    // Only allow debugger in development
+    "no-debugger": "off",
+    "no-console": "off"
+  }
+}

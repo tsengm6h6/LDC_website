@@ -1,0 +1,23 @@
+<template>
+  <div class="flex items-center justify-center">
+    <div
+      class="flex h-12 w-12 items-center justify-center rounded-full bg-[#D9D9D9] md:h-[60px] md:w-[60px]">
+      <Icon :name="props.icon" size="30" color="#3F3E3E" />
+    </div>
+    <div class="ml-4 text-base leading-relaxed tracking-wider">
+      <h5 class="font-medium">{{ props.title }}</h5>
+      <p class="">
+        <slot />
+      </p>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+  const props = defineProps<{
+    icon: string
+    title: string
+  }>()
+</script>
+
+<style scoped></style>

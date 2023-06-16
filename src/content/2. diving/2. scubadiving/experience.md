@@ -1,0 +1,103 @@
+---
+title: '水肺體驗'
+description: '東北角龍洞水肺潛水體驗'
+img: about-1.jpg
+alt: About 1
+category: '體驗活動'
+subCategory: '水肺潛水'
+
+navigation:
+  title: '水肺體驗'
+  description: '東北角龍洞水肺潛水體驗'
+  category: '水肺潛水'
+---
+
+::detail-container
+
+#info
+::::detail-info{src="about-1.jpg" alt="About 1" title="水肺潛水體驗" tag="水肺潛水"}
+::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
+約 2 小時
+::
+::info-icon{icon="solar:tag-price-bold" title="課程費用"}
+[NT$ 2,400]{.text-danger}
+::
+::info-icon{icon="material-symbols:emoji-people-rounded" title="報名條件"}
+年滿 10 歲
+::
+::info-icon{icon="material-symbols:assignment-outline" title="報名制度"}
+預約制，一位即可成團
+::
+::::
+
+#tab
+::::detail-tab
+
+#detail
+:::info-paragraph{title="活動流程" list-type="number"}
+
+最多兩位學員配一位教練，最高品質、安全第一，讓您放心享受水肺潛水初體驗！
+
+#list
+
+1. 技巧講解、著裝 - 約 1 小時
+2. 水面練習技巧 - 約 20 分鐘
+3. 水下觀光 - 約 30 - 35 分鐘
+
+:::
+:::info-paragraph{title="適用對象"}
+
+#list
+
+- 年滿 10 歲
+- 無特殊疾病
+- 近期沒動過大手術
+
+:::
+
+#include
+::info-paragraph{title="包含" list-type="checked"}
+
+#list
+
+- 全套裝備
+- 一支氣瓶
+- 免費盥洗
+- 公共意外責任險
+
+::
+
+::info-paragraph{title="不包含" list-type="unchecked"}
+
+#list
+
+- 個人海域傷害險[(建議自行投保)]{.text-danger}
+
+::
+
+#notice
+:::info-paragraph{title="貼心安排及提醒"}
+
+#list
+
+- 課程均採[預約制]{.text-red-400}，5 ~ 8 月旺季期間請提前預約
+- 女性學員參加課程前請自行評估生理期影響
+- 有近視的學員建議配戴隱形眼鏡
+
+:::
+#policy
+:::info-paragraph{title="取消政策" info-type="warn"}
+
+#list
+
+- 活動前 8 - 12 天之間取消，退還全額 80% 費用
+- 活動前 4 - 7 天之間取消，退還全額 60% 費用
+- 活動前 3 天內取消，恕不退費
+
+:::
+::::
+
+#relative
+::::detail-relative
+::::
+::

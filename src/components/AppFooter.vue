@@ -1,0 +1,55 @@
+<template>
+  <footer class="bg-main-bg-dark leading-relaxed tracking-widest text-main-bg-white">
+    <div class="container mx-auto px-6 py-12">
+      <div class="flex flex-col items-start sm:flex-row sm:justify-between">
+        <!-- Left -->
+        <div>
+          <NuxtLink to="/" class="flex items-center font-bold">
+            <img
+              src="@/assets/image/logo.png"
+              alt="logo"
+              class="w-16 object-contain object-center" />
+            <span class="text-lg font-bold">龍洞岬</span>
+          </NuxtLink>
+          <div class="ml-4 mt-1 flex items-center gap-2">
+            <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />
+            <Icon name="ri:instagram-line" size="24" color="#FDFDFD" />
+            <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />
+          </div>
+          <div class="mt-4 text-main-gray">
+            <p class="my-1 ml-4 text-sm">新北市貢寮區龍洞街1-5號</p>
+            <p class="my-1 ml-4 text-sm">0939-098-057</p>
+            <p class="my-1 ml-4 text-sm">bang92830@gmail.com</p>
+          </div>
+        </div>
+        <!-- Right -->
+        <div
+          class="ml-5 mt-8 hidden flex-col text-base sm:mt-0 sm:flex sm:w-2/3 sm:flex-row sm:items-start sm:justify-around">
+          <!-- 體驗 -->
+          <div v-for="(n, i) in nav" :key="`nav-group-${i}-${n.title}`" class="">
+            <h5 class="mb-2 font-bold">{{ n.title }}</h5>
+            <ul v-if="n.children" class="text-main-gray sm:block">
+              <li
+                v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
+                :key="`nav-child-${j}-${c.title}`"
+                class="hover:text-main-bg-white">
+                <NuxtLink :to="c._path">{{ c.title }}</NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copy right -->
+      <div class="mt-8 w-full">
+        <hr />
+        <p class="mt-4 text-center text-xs font-extralight text-main-gray">
+          © 2021 Bang Diving. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script setup lang="ts">
+  const { data: nav } = useAsyncData('navigation', () => fetchContentNavigation())
+</script>
