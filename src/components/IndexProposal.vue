@@ -39,19 +39,21 @@
         </div>
         <div class="w-full md:w-1/2">
           <div class="flex items-end">
-            <div class="h-[304px] w-[354px] flex-auto overflow-hidden rounded-tl-60">
+            <div
+              class="h-[200px] flex-auto overflow-hidden rounded-tl-30 md:h-[304px] md:w-[354px] md:rounded-tl-60">
               <img
                 src="@/assets/image/course/longdong-view-1.jpg"
                 alt=""
                 class="inline-block h-full w-full object-cover object-center" />
             </div>
             <span
-              class="ml-3 inline-block h-[115px] w-[116px] shrink grow-0 rounded-tr-60 bg-primary"></span>
+              class="ml-2 inline-block h-[70px] w-[80px] shrink grow-0 rounded-tr-30 bg-primary md:ml-3 md:h-[115px] md:w-[116px] md:rounded-tr-60"></span>
           </div>
-          <div class="mt-3 flex items-start">
+          <div class="mt-2 flex items-start md:mt-3">
             <span
-              class="mr-3 inline-block h-[172px] w-[116px] shrink grow-0 rounded-bl-60 bg-secondary"></span>
-            <div class="h-[423px] w-[354px] flex-auto overflow-hidden rounded-br-60">
+              class="mr-2 inline-block h-[160px] w-[80px] shrink grow-0 rounded-bl-30 bg-secondary md:mr-3 md:h-[172px] md:w-[116px] md:rounded-bl-60"></span>
+            <div
+              class="h-[290px] w-[354px] flex-auto overflow-hidden rounded-br-30 md:h-[423px] md:rounded-br-60">
               <img
                 src="@/assets/image/banner-2.jpg"
                 alt=""

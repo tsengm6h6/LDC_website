@@ -18,7 +18,7 @@
             浮潛必備的救生衣、面鏡呼吸管、防滑鞋、水母衣，到自由潛水的中、長蛙或是水肺潛水的輕、重裝備，都可以在這裡一次租齊。
             北海岸週末人潮較多，想來東北角玩水的朋友建議提前預約唷！
           </p>
-          <button class="btn btn-primary btn-lg mt-8" @click="$router.push('/equipment')">
+          <button class="btn btn-primary btn-lg mt-8" @click="$router.push('/equipment/renting')">
             查詢裝備與價目表
           </button>
         </div>

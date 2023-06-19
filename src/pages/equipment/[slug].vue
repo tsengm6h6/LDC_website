@@ -119,7 +119,7 @@
       price: 'NT$ 100',
     },
     {
-      src: 'snorkeling/',
+      src: '',
       alt: 'rashguard-bottom',
       title: '水母褲',
       price: 'NT$ 100',
