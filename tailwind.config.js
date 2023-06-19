@@ -1,5 +1,6 @@
 export const theme = {
   content: ['./src/**/*.{html,js}'],
+  important: true,
   extend: {
     colors: {
       primary: '#34B1B1',

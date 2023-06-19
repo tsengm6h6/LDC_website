@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: 'src/',
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/content'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/content', 'nuxt-swiper'],
   css: ['~/assets/css/tailwind.css'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

@@ -8,17 +8,45 @@
       </p>
     </div>
     <!-- Slider -->
-    <div class="mt-12 w-full overflow-hidden pb-24">
-      <div
-        class="flex max-h-[80vh] snap-x snap-mandatory scroll-pl-8 flex-col gap-8 overflow-auto px-6 pb-4 md:flex-row md:items-start md:px-0 md:pl-8">
-        <!-- Card -->
-        <div
+    <div class="container mx-auto px-6 pb-14 pt-6">
+      <Swiper
+        :modules="[SwiperAutoplay, SwiperPagination]"
+        :slides-per-view="1"
+        :space-between="10"
+        :pagination="{
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet !transition-all !duration-800',
+          bulletActiveClass:
+            'swiper-pagination-bullet-active !w-8 !rounded !bg-main-bg-gray !opacity-20',
+        }"
+        :loop="true"
+        :autoplay="{
+          delay: 2000,
+          disableOnInteraction: true,
+        }"
+        :breakpoints="{
+          '640': {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          '768': {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          '1024': {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        }">
+        <SwiperSlide
           v-for="(data, i) in dataWithImage"
           :key="`course-${i}-${data.title}`"
-          class="h-[250px] w-full shrink-0 grow-0 cursor-pointer snap-start overflow-hidden rounded-30 md:w-1/4">
-          <HoverImage :src="data.src" :title="data.title" :alt="data.alt" :path="data.path" />
-        </div>
-      </div>
+          class="h-[200px] w-full shrink-0 grow-0 cursor-pointer md:w-1/4">
+          <div class="overflow-hidden rounded-xl">
+            <HoverImage :src="data.src" :title="data.title" :alt="data.alt" :path="data.path" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   </section>
 </template>
@@ -27,8 +55,20 @@
   const { data: courses } = await useAsyncData('courses', () =>
     queryContent().only(['title', 'img', '_path']).find()
   )
+
+  const highlight = [
+    '/experience/snorkeling/snorkeling-long',
+    '/experience/snorkeling/snorkeling-short',
+    '/experience/sup/sup-long',
+    '/experience/sup/sup-short',
+    '/diving/scubadiving/experience',
+    '/diving/scubadiving/open-water',
+    '/diving/scubadiving/fundive-long',
+    '/diving/freediving/aida2',
+  ]
+
   const dataWithImage = courses.value
-    ?.filter((course) => course.img)
+    ?.filter((course) => highlight.includes(course._path))
     .map((course) => ({
       src: course.img,
       alt: 'activity-image',
@@ -37,4 +77,9 @@
     }))
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+  ::v-deep.swiper {
+    padding-bottom: 40px !important;
+    border-radius: 12px !important;
+  }
+</style>
