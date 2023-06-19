@@ -1,8 +1,8 @@
 ---
 title: '體驗攀岩'
 description: '峰巒如聚的龍洞岬擁有古老的岩石和海崖峭壁，臨海矗立、氣勢雄偉，是國際級的岩場，登高遠眺就是美麗的海岸線，由專業教練教學與戒護，帶你一起用不同視角眺望龍洞美景。'
-img: about-1.jpg
-alt: About 1
+img: /course/rock-climbing.jpg
+alt: rock-climbing
 category: '體驗活動'
 subCategory: '體驗攀岩'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="6 小時龍洞岩場體驗攀岩" tag="挑戰自我"}
+::::detail-info{src="/course/rock-climbing.jpg" alt="rock-climbing" title="6 小時龍洞岩場體驗攀岩" tag="挑戰自我"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 6 小時
 ::

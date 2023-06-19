@@ -1,8 +1,8 @@
 ---
 title: 'AOW 證照課程'
 description: '東北角龍洞進階開放水域潛水員 Advance Open Water Diver 考證照課程'
-img: about-1.jpg
-alt: About 1
+img: /course/aow.jpg
+alt: advance-open-water
 category: '證照課程'
 subCategory: '水肺潛水'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="Advanced Open Water (AOW) 進階開放水域潛水員證照課程" tag="水肺潛水"}
+::::detail-info{src="/course/aow.jpg" alt="advance-open-water" title="Advanced Open Water (AOW) 進階開放水域潛水員證照課程" tag="水肺潛水"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 兩天一夜
 ::

@@ -1,8 +1,8 @@
 ---
 title: 'OW 證照課程'
 description: '東北角龍洞初階開放水域潛水員 Open Water Diver 考證照課程'
-img: about-1.jpg
-alt: About 1
+img: /course/ow.jpg
+alt: open-water
 category: '證照課程'
 subCategory: '水肺潛水'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="Open Water（OW）初階開放水域潛水員證照課程" tag="水肺潛水"}
+::::detail-info{src="/course/ow.jpg" alt="open-water" title="Open Water（OW）初階開放水域潛水員證照課程" tag="水肺潛水"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 三天兩夜
 ::

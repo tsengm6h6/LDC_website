@@ -19,7 +19,7 @@
           <div class="mt-4 text-main-gray">
             <p class="my-1 ml-4 text-sm">新北市貢寮區龍洞街1-5號</p>
             <p class="my-1 ml-4 text-sm">0939-098-057</p>
-            <p class="my-1 ml-4 text-sm">bang92830@gmail.com</p>
+            <p class="my-1 ml-4 text-sm">longdongcape@gmail.com</p>
           </div>
         </div>
         <!-- Right -->

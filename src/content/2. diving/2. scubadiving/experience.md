@@ -1,8 +1,8 @@
 ---
 title: '水肺體驗'
 description: '東北角龍洞水肺潛水體驗'
-img: about-1.jpg
-alt: About 1
+img: /course/scuba-experience.jpg
+alt: scuba-diving-experience
 category: '體驗活動'
 subCategory: '水肺潛水'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="水肺潛水體驗" tag="水肺潛水"}
+::::detail-info{src="/course/scuba-experience.jpg" alt="scuba-diving-experience" title="水肺潛水體驗" tag="水肺潛水"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 約 2 小時
 ::

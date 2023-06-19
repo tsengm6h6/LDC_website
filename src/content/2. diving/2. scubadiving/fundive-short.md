@@ -1,8 +1,8 @@
 ---
 title: 'Fun Dive(一支氣瓶)'
 description: '東北角龍洞潛水旅遊 Fun Dive (一支氣瓶)'
-img: about-1.jpg
-alt: About 1
+img: /course/fundive-2.jpg
+alt: fundive
 category: '水肺潛水'
 subCategory: '水肺潛水'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="Fun Dive 潛水旅遊(一支氣瓶)" tag="水肺潛水"}
+::::detail-info{src="/course/fundive-2.jpg" alt="fundive" title="Fun Dive 潛水旅遊(一支氣瓶)" tag="水肺潛水"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 1.5 小時（一支氣瓶）
 ::

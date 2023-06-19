@@ -13,7 +13,7 @@
           >
           <IconInfo icon="material-symbols:call" title="聯絡電話">0939-098-057</IconInfo>
           <IconInfo icon="material-symbols:mail-outline" title="信箱 Email"
-            >bang92830@gmail.com</IconInfo
+            >longdongcape@gmail.com</IconInfo
           >
         </div>
       </div>

@@ -100,6 +100,12 @@
                     <NuxtLink
                       :to="c._path"
                       class="cursor-pointer pr-4 transition-colors duration-300 hover:text-secondary-dark"
+                      @click="
+                        () => {
+                          isMenuToggled = false
+                          showSubMenu = false
+                        }
+                      "
                       >{{ c.title }}</NuxtLink
                     >
                   </li>

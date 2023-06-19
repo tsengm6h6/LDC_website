@@ -5,7 +5,7 @@
       :key="`equip-${i}-${item.title}`"
       class="mb-3 mr-2 flex items-center overflow-hidden rounded-lg bg-[#F6F6F6] p-2 drop-shadow-[3px_3px_2px_rgba(0,0,0,0.25)] last:mb-0 md:mb-0 md:p-4">
       <img
-        :src="`/_nuxt/assets/image/${item.src}`"
+        :src="`/_nuxt/assets/image/equipment/${item.src}`"
         :alt="item.alt"
         class="h-16 w-16 rounded bg-white object-contain object-center drop-shadow-[2px_2px_1px_rgba(0,0,0,0.25)] md:h-20 md:w-20" />
       <div class="ml-4 flex-1">

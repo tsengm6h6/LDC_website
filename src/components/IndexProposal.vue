@@ -41,7 +41,7 @@
           <div class="flex items-end">
             <div class="h-[304px] w-[354px] flex-auto overflow-hidden rounded-tl-60">
               <img
-                src="@/assets/image/banner-1.jpeg"
+                src="@/assets/image/course/longdong-view-1.jpg"
                 alt=""
                 class="inline-block h-full w-full object-cover object-center" />
             </div>

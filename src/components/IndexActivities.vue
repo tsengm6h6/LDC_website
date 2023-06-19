@@ -41,8 +41,8 @@
         <SwiperSlide
           v-for="(data, i) in dataWithImage"
           :key="`course-${i}-${data.title}`"
-          class="h-[200px] w-full shrink-0 grow-0 cursor-pointer md:w-1/4">
-          <div class="overflow-hidden rounded-xl">
+          class="w-full shrink-0 grow-0 cursor-pointer md:w-1/4">
+          <div class="h-[300px] w-full overflow-hidden rounded-xl md:h-[200px]">
             <HoverImage :src="data.src" :title="data.title" :alt="data.alt" :path="data.path" />
           </div>
         </SwiperSlide>

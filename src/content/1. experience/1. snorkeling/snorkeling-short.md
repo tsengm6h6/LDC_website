@@ -1,8 +1,8 @@
 ---
 title: '1.5 小時龍洞灣內浮潛'
 description: '東北角龍洞週末親子出遊首選，1.5 小時龍洞灣內浮潛'
-img: about-1.jpg
-alt: About 1
+img: /course/snorkeling.jpg
+alt: snorkeling
 category: '體驗活動'
 subCategory: '浮潛體驗'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="1.5 小時龍洞灣內浮潛" tag="親子同樂"}
+::::detail-info{src="/course/snorkeling.jpg" alt="snorkeling" title="1.5 小時龍洞灣內浮潛" tag="親子同樂"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 1.5 小時
 ::

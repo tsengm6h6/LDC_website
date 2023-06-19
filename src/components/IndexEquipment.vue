@@ -5,7 +5,7 @@
       <div class="flex flex-col-reverse items-stretch justify-between md:flex-row">
         <div class="px-0 md:w-1/3 md:p-0">
           <img
-            src="@/assets/image/banner-2.jpg"
+            src="@/assets/image/about-1.jpg"
             alt=""
             class="h-full min-h-[200px] w-full rounded-br-30 rounded-tl-30 object-fill object-center md:rounded-tl-60" />
         </div>

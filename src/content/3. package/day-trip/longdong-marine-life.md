@@ -1,8 +1,8 @@
 ---
 title: '龍洞一日體驗海人生活'
 description: '東北角龍洞週末一日遊套裝行程，體驗一日海人生活'
-img: about-1.jpg
-alt: About 1
+img: course/longdong-view-3.jpg
+alt: longdong-view
 category: '龍洞一日遊'
 subCategory: '秘境探索'
 
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="about-1.jpg" alt="About 1" title="龍洞一日體驗海人生活" tag="秘境探索"}
+::::detail-info{src="course/longdong-view-3.jpg" alt="longdong-view" title="龍洞一日體驗海人生活" tag="秘境探索"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="活動時數"}
 一天
 ::
