@@ -3,7 +3,7 @@
   <section class="md:pt-[55px]">
     <div class="flex min-h-[55vh] justify-center lg:min-h-[45vh]">
       <div
-        class="hero-bg animate__animated animate__fadeIn relative px-6 md:w-11/12 md:px-0 lg:w-3/4">
+        class="hero-bg animate__animated animate__fadeIn relative flex items-center px-6 md:w-11/12 md:px-0 lg:w-3/4">
         <!-- 文字區 -->
         <div class="py-8 pl-4 md:w-4/5 lg:w-2/3">
           <p class="text-base font-semibold tracking-wider text-main-dark opacity-80">
@@ -21,7 +21,7 @@
             <br />裝備與潛水中心
           </h1>
           <h2 class="animate__animated animate__fadeIn mt-2 md:w-1/2 lg:w-3/4">
-            提供東北角浮潛、SUP、自由潛水、水肺潛水課程與各式裝備租借
+            提供東北角浮潛、SUP、水肺潛水課程與各式裝備租借
           </h2>
           <button
             class="animate__animated animate__fadeIn btn btn-primary btn-lg group relative mt-12 w-full animate-bounce md:mt-12 md:w-auto"

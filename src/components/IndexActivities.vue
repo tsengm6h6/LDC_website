@@ -1,14 +1,14 @@
 <template>
   <section class="bg-main-bg-dark text-main-bg-white">
-    <div class="container mx-auto px-6 pt-24">
+    <div class="container mx-auto px-6 pt-12 lg:pt-24">
       <h3 class="mb-4">最豐富的活動選擇</h3>
-      <p class="text-base leading-relaxed tracking-wider md:text-lg">
-        除了東北角老少閒宜的水上活動浮潛和 SUP 立槳之外，也有潛水專業的 PADI 水肺潛水考證、體驗、FUN
-        DIVE、AIDA 自由潛水課程，及挑戰國際級岩場的攀岩體驗，最多樣的選擇等你來嘗試！
+      <p class="text-base leading-relaxed tracking-wide md:text-lg">
+        想走出戶外又不知道如何開始嗎？
+        龍洞岬裝備中心提供多種不同選擇，不論你是新手入門還是冒險老手，和我們一起上山下海，體驗不一樣的東北角！
       </p>
     </div>
     <!-- Slider -->
-    <div class="container mx-auto px-6 pb-14 pt-6">
+    <div class="container mx-auto px-6 pb-6 pt-6 lg:pb-14">
       <Swiper
         :modules="[SwiperAutoplay, SwiperPagination]"
         :slides-per-view="1"
@@ -64,7 +64,6 @@
     '/diving/scubadiving/experience',
     '/diving/scubadiving/open-water',
     '/diving/scubadiving/fundive-long',
-    '/diving/freediving/aida2',
   ]
 
   const dataWithImage = courses.value

@@ -13,7 +13,7 @@
                 <span class="relative inline-block">交給我們就對了！</span>
               </span>
             </h3>
-            <p class="mb-8 text-base leading-relaxed tracking-wider md:w-11/12">
+            <p class="mb-8 text-lg leading-relaxed tracking-wider md:w-11/12">
               上山下海，多種組合任你挑選。行程包含海味小吃，並帶你品嚐來龍洞不能錯過的名產「石花凍」，體驗一趟沁涼消暑的週末小旅行！
             </p>
             <ul

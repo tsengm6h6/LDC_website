@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-6 py-12 md:py-24">
+  <section class="container mx-auto px-6 py-12 lg:py-24">
     <div class="flex flex-col md:flex-row">
       <div class="w-full md:w-1/2">
         <h3 class="">現在就與我們聯繫！</h3>

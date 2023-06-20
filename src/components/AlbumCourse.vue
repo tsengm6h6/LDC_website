@@ -29,13 +29,6 @@
 </script>
 
 <style scoped>
-  /* @media (min-width: 768px) {
-    .grid-album {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-auto-rows: minmax(220px, 1fr);
-    }
-  } */
-
   /* width */
   ::-webkit-scrollbar {
     width: 6px;

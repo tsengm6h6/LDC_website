@@ -11,7 +11,7 @@
         <FeatureCard
           icon="material-symbols:person-play-outline"
           feature="多樣活動與專業團隊"
-          description="玩水入門的浮潛、SUP 立槳到自潛、水肺潛水證照課程、龍洞攀岩，多樣活動等你來體驗！" />
+          description="玩水入門的浮潛、SUP 立槳到水肺潛水證照課程、龍洞攀岩，多樣活動等你來體驗！" />
         <FeatureCard
           icon="mdi:diving-flippers"
           feature="東北角最齊全裝備供應"
