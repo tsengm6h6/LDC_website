@@ -1,6 +1,6 @@
 <template>
   <!-- left -->
-  <div class="hidden px-12 pt-16 md:block">
+  <div class="hidden pl-12 pr-8 pt-16 md:block">
     <ul class="">
       <li
         v-for="(sub, i) in subMenu"

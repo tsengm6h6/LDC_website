@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-6 h-[60vh] overflow-y-auto pr-2 pt-2">
-    <div class="grid grid-cols-6 gap-2">
+  <div class="mt-6 h-[61vh] overflow-y-auto pr-2 pt-2">
+    <div class="grid grid-cols-6 gap-2 md:gap-3">
       <div
         v-for="(course, i) in data"
         :key="`image-${i}-${course.src}`"
-        class="col-span-full h-[240px] min-w-[240px] overflow-hidden rounded sm:col-span-3 lg:col-span-2">
+        class="col-span-full h-[240px] min-w-[240px] overflow-hidden rounded-xl sm:col-span-3 lg:col-span-2">
         <HoverImage v-bind="course" :hover-background-style="'bg-secondary'" />
       </div>
     </div>

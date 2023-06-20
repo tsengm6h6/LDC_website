@@ -27,7 +27,7 @@
     <img
       src="@/assets/image/subtract-front-2.svg"
       alt="overlay"
-      class="absolute right-0 top-[60px] hidden opacity-80 lg:inline-block" />
+      class="absolute right-0 top-[100px] hidden opacity-80 lg:inline-block" />
     <img
       src="@/assets/image/subtract-back-2.svg"
       alt="overlay"

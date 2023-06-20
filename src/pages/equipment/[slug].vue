@@ -34,7 +34,6 @@
     price: string
   }
 
-  console.log(page)
   const snorkelingItems = [
     {
       src: 'snorkeling/mask.png',
@@ -133,7 +132,7 @@
       price: 'NT$ 100',
     },
     {
-      src: '',
+      src: 'snorkeling/rashguard-bottom.png',
       alt: 'rashguard-bottom',
       title: '水母褲',
       price: 'NT$ 100',
@@ -226,13 +225,13 @@
       src: 'scuba-diving/bcd.jpg',
       alt: 'bcd',
       title: 'BCD',
-      price: 'NT$ ???',
+      price: 'NT$ 300',
     },
     {
       src: 'scuba-diving/regulator.jpg',
       alt: 'regulator',
       title: '調節器',
-      price: 'NT$ ???',
+      price: 'NT$ 300',
     },
     {
       src: 'scuba-diving/diving-suit.png',
@@ -254,11 +253,11 @@
     },
   ]
 
-  const getCurrentList = (pageTitle: string) => {
-    switch (pageTitle) {
-      case '自潛裝備':
+  const getCurrentList = (pagePath: string) => {
+    switch (pagePath) {
+      case '/equipment/renting-freediving':
         return freeDivingItems
-      case '水肺裝備':
+      case '/equipment/renting-scubadiving':
         return scubaDivingItems
       default:
         return snorkelingItems
@@ -266,7 +265,7 @@
   }
 
   let currentList: Item[] = []
-  if (page.value?.title) {
-    currentList = getCurrentList(page.value.title)
+  if (page.value?._path) {
+    currentList = getCurrentList(page.value._path)
   }
 </script>
