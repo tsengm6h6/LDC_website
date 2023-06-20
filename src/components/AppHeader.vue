@@ -1,150 +1,115 @@
 <template>
   <div>
-    <header :class="`fixed top-0 h-[95px] w-full shadow-sm ${navBackGround} z-40 transition-all`">
-      <nav class="container mx-auto flex items-center justify-between px-4">
-        <NuxtLink to="/" class="flex items-center py-4 font-bold">
+    <div :class="`fixed right-0 top-0 flex w-full ${navBackGround} z-30 shadow-sm md:hidden`">
+      <div class="container mx-auto flex items-center justify-between px-4 md:w-full">
+        <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
           <img
             src="@/assets/image/logo-dark.svg"
             alt="logo"
-            class="w-20 object-contain object-center" />
-          <span class="text-2xl font-bold text-main-dark">龍洞岬</span>
+            class="w-14 object-contain object-center md:w-20" />
+          <span class="text-lg font-bold text-main-dark">龍洞岬</span>
         </NuxtLink>
-        <ul class="mr-4 hidden flex-1 justify-end gap-1 md:flex">
-          <li v-for="(n, i) in nav" :key="`nav-item-${i}-${n.title}`" class="relative p-4">
-            <NuxtLink v-if="!n.children" :to="n._path">{{ n.title }}</NuxtLink>
-            <div v-else>
-              <button class="main-nav relative" @click="toggleSubMenu(i)">
-                <NuxtLink class="main-div">{{ n.title }}</NuxtLink>
-                <Icon name="ic:baseline-keyboard-arrow-down" size="16px" />
-              </button>
-              <div
-                :class="`${subNavBackGround} subnav absolute -right-[2px] top-[75px] w-full origin-top transform shadow-sm transition-all ${
-                  showSubMenu && showSubMenuIndex === i ? 'scale-y-1' : 'scale-y-0'
-                }`">
-                <ul class="py-2">
-                  <li
-                    v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
-                    :key="`nav-item-${i}-${j}-${c.title}`"
-                    class="text-center">
-                    <NuxtLink
-                      class="inline-block px-2 py-3 transition-colors duration-300 hover:text-primary"
-                      :to="c._path"
-                      @click="showSubMenu = false"
-                      >{{ c.title }}</NuxtLink
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <button
-          class="btn btn-secondary hidden rounded-none rounded-br-20 rounded-tl-20 md:block"
-          @click="clickContact">
-          聯絡我們
-        </button>
         <button
           class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary p-2 text-white shadow md:hidden"
-          @click="isMenuToggled = true">
+          @click="emit('toggle-menu', true)">
           <Icon name="ci:hamburger-md" size="24" color="text-main-bg-white" />
         </button>
-      </nav>
-    </header>
-
-    <!-- Mobile Modal -->
-    <div
-      class="modal fixed right-0 top-0 z-40 h-full bg-[#F3DDD4] drop-shadow-lg transition-all md:hidden"
-      :class="`${isMenuToggled ? 'w-[60%]' : 'w-0'}`">
-      <div v-if="isMenuToggled">
-        <!-- Close -->
-        <div class="flex justify-end p-4">
-          <button
-            class="text-2xl text-secondary transition-colors duration-300 hover:text-secondary-dark"
-            @click="isMenuToggled = false">
-            ×
-          </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="pt-10 text-base">
-          <ul class="mx-auto text-center">
-            <li v-for="(n, i) in nav" :key="`nav-item-${i}-${n.title}`" class="py-4">
+      </div>
+    </div>
+    <header
+      :class="`fixed right-0 top-0 ${
+        isMenuToggled ? 'z-50 w-[60%] opacity-100' : 'z-0 w-0 opacity-0 md:z-50 md:opacity-100'
+      } md:w-full md:shadow-sm md:${navBackGround} origin-right transition-all duration-300`">
+      <nav
+        :class="`relative bg-main-bg-white shadow-sm transition-all delay-100 duration-200 ${
+          isMenuToggled ? '' : ''
+        }`">
+        <div class="container mx-auto flex items-center px-4 md:w-full">
+          <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
+            <img
+              src="@/assets/image/logo-dark.svg"
+              alt="logo"
+              class="w-14 object-contain object-center md:w-20" />
+            <span class="hidden text-2xl font-bold text-main-dark md:inline">龍洞岬</span>
+          </NuxtLink>
+          <ul
+            class="absolute left-0 right-0 top-full ml-auto h-screen bg-main-bg-white px-2 py-4 shadow-lg md:relative md:flex md:h-auto md:space-x-1 md:py-0 md:shadow-none lg:space-x-2">
+            <li v-for="(n, i) in nav" :key="`nav-item-${i}-${n.title}`" class="parent relative">
               <NuxtLink
                 v-if="!n.children"
                 :to="n._path"
-                class="cursor-pointer pr-4 transition-colors duration-300 hover:text-secondary-dark"
-                >{{ n.title }}</NuxtLink
-              >
-              <div v-else class="mx-auto text-center">
-                <label
-                  class="main-nav relative cursor-pointer transition-colors duration-300 hover:text-secondary-dark"
-                  @click="toggleSubMenu(i)">
-                  {{ n.title }}
-                  <span
-                    ><Icon
-                      :name="
-                        showSubMenu && showSubMenuIndex === i
-                          ? 'ic:baseline-keyboard-arrow-up'
-                          : 'ic:baseline-keyboard-arrow-down'
-                      "
-                      size="16px"
-                  /></span>
-                </label>
-                <ul
-                  :class="`mt-2 w-full origin-top transform transition-all ${
-                    showSubMenu && showSubMenuIndex === i ? 'scale-y-100' : 'max-h-0 scale-y-0'
-                  }`">
-                  <li
-                    v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
-                    :key="`nav-item-${i}-${j}-${c.title}`"
-                    class="bg-secondary py-3 text-main-bg-white">
-                    <NuxtLink
-                      :to="c._path"
-                      class="cursor-pointer pr-4 transition-colors duration-300 hover:text-secondary-dark"
-                      @click="
-                        () => {
-                          isMenuToggled = false
-                          showSubMenu = false
-                        }
-                      "
-                      >{{ c.title }}</NuxtLink
-                    >
-                  </li>
-                </ul>
-              </div>
+                class="flex items-center justify-between space-x-1 p-2 hover:bg-main-bg-gray md:inline-flex md:h-[90px] lg:space-x-2 lg:p-4">
+                {{ n.title }}
+              </NuxtLink>
+              <span
+                v-else
+                :to="n._path"
+                class="hidden cursor-pointer items-center justify-between space-x-1 p-2 hover:bg-main-bg-gray md:inline-flex md:h-[90px] lg:space-x-2 lg:p-4">
+                <span>{{ n.title }}</span>
+                <Icon name="ic:baseline-keyboard-arrow-down" size="16" color="text-main-dark" />
+              </span>
+              <ul
+                v-if="n.children"
+                class="child right-0 top-full bg-main-bg-white transition duration-300 md:absolute md:w-40 md:rounded-b md:shadow-lg">
+                <li
+                  v-for="(c, j) in n.children.filter((o) => o.title !== n.title)"
+                  :key="`nav-item-${i}-${j}-${c.title}`">
+                  <NuxtLink
+                    :to="c._path"
+                    class="flex h-[50px] items-center justify-center px-4 py-3 hover:bg-main-bg-gray"
+                    @click="emit('toggle-menu', false)">
+                    {{ c.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="flex items-center justify-center p-2 md:inline-flex md:h-[90px]">
+                <button
+                  class="btn btn-secondary rounded-none rounded-br-20 rounded-tl-20 md:block"
+                  @click="clickContact">
+                  關於我們
+                </button>
+              </span>
             </li>
           </ul>
-          <div class="mx-auto px-4 text-center">
-            <button
-              class="btn btn-secondary mt-10 w-full rounded-none rounded-br-20 rounded-tl-20"
-              @click="clickContact">
-              聯絡我們
-            </button>
+          <div
+            class="ml-auto cursor-pointer font-bold text-secondary transition-colors duration-300 hover:text-secondary-dark md:hidden"
+            @click="emit('toggle-menu', false)">
+            <Icon name="maki:cross" size="20" />
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   </div>
 </template>
 
 <script setup lang="ts">
-  const emit = defineEmits(['scroll-to'])
-  const isMenuToggled = ref(false)
+  defineProps({
+    isMenuToggled: {
+      type: Boolean,
+      required: true,
+    },
+  })
+
+  const emit = defineEmits(['scroll-to', 'toggle-menu'])
+  // const isMenuToggled = ref(false)
   const isTopOfPage = ref(true)
 
   const clickContact = () => {
     const { path } = useRoute()
     const router = useRouter()
     path === '/' ? emit('scroll-to', 'contact') : router.push('/contactus')
-    isMenuToggled.value = false
+    emit('toggle-menu', false)
   }
 
   const navBackGround = computed(() => {
     return isTopOfPage.value ? 'bg-transparent text-main-dark' : 'bg-main-bg-gray'
   })
 
-  const subNavBackGround = computed(() => {
-    return isTopOfPage.value ? 'bg-white text-main-dark' : 'bg-main-bg-gray'
-  })
+  // const subNavBackGround = computed(() => {
+  //   return isTopOfPage.value ? 'bg-white text-main-dark' : 'bg-main-bg-gray'
+  // })
 
   const handleScroll = () => {
     if (window.scrollY === 0) {
@@ -156,17 +121,17 @@
 
   const { data: nav } = useAsyncData('navigation', () => fetchContentNavigation())
 
-  const showSubMenu = ref(false)
-  const showSubMenuIndex = ref<number | null>(null)
+  // const showSubMenu = ref(false)
+  // const showSubMenuIndex = ref<number | null>(null)
 
-  const toggleSubMenu = (i: number) => {
-    if (i === showSubMenuIndex.value) {
-      showSubMenu.value = !showSubMenu.value
-    } else {
-      showSubMenu.value = true
-      showSubMenuIndex.value = i
-    }
-  }
+  // const toggleSubMenu = (i: number) => {
+  //   if (i === showSubMenuIndex.value) {
+  //     showSubMenu.value = !showSubMenu.value
+  //   } else {
+  //     showSubMenu.value = true
+  //     showSubMenuIndex.value = i
+  //   }
+  // }
 
   onMounted(() => {
     window.addEventListener('scroll', handleScroll)
@@ -183,5 +148,24 @@
 
   .modal .router-link-exact-active {
     color: #3f3e3e;
+  }
+
+  .overlay {
+    opacity: 0.65;
+  }
+
+  @media screen and (min-width: 768px) {
+    .parent:hover .child {
+      opacity: 1;
+      height: auto;
+      overflow: none;
+      transform: translateY(0);
+    }
+    .child {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transform: translateY(-10%);
+    }
   }
 </style>

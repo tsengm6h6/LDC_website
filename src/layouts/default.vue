@@ -1,23 +1,34 @@
 <template>
-  <div class="w-full">
-    <AppHeader />
+  <div :class="`w-full ${isMenuToggled ? 'overflow-hidden' : 'overflow-auto'}`">
+    <div
+      :class="`${
+        isMenuToggled ? 'block' : 'hidden'
+      } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"></div>
+    <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
 
-    <main class="relative mt-[95px] min-h-screen">
-      <slot />
+    <main class="relative min-h-screen">
+      <div class="pt-[95px]">
+        <slot />
+      </div>
     </main>
 
     <AppFooter />
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue'
+<script setup lang="ts">
+  const isMenuToggled = ref(false)
+  const toggleMenu = (value: boolean) => {
+    isMenuToggled.value = value
+  }
 
-  export default defineComponent({
-    setup() {
-      return {}
-    },
-  })
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset - 95
+      window.scrollTo({ top: y, behavior: 'smooth' })
+    }
+  }
 </script>
 
 <style scoped>

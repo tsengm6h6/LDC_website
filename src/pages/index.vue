@@ -1,21 +1,15 @@
 <template>
   <div>
-    <AppHeader @scroll-to="scrollTo" />
     <IndexHero id="hero" @scroll-to="scrollTo" />
     <IndexFeature id="feature" />
     <IndexProposal id="proposal" />
     <IndexEquipment id="equipment" />
     <IndexActivities id="activities" />
     <IndexContact id="contact" />
-    <AppFooter />
   </div>
 </template>
 
 <script lang="ts" setup>
-  definePageMeta({
-    layout: false,
-  })
-
   const scrollTo = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
