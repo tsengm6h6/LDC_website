@@ -48,7 +48,7 @@
 
 <style>
   .features {
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3 ease-in-out;
   }
 
@@ -57,8 +57,8 @@
   }
 
   .features .feature-card {
-    opacity: 0;
-    transform: translateY(-50%);
+    opacity: 1;
+    /* transform: translateY(-50%); */
     transition: all 0.6s ease-in-out;
   }
 

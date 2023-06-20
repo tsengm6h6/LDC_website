@@ -67,7 +67,7 @@
               <span class="flex items-center justify-center p-2 md:inline-flex md:h-[90px]">
                 <button
                   class="btn btn-secondary rounded-none rounded-br-20 rounded-tl-20 md:block"
-                  @click="clickContact">
+                  @click.stop.prevent="clickContact">
                   關於我們
                 </button>
               </span>
