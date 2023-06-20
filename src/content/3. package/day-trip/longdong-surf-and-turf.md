@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="course/longdong-view-2.jpg" alt="longdong-view" title="龍洞一日海陸生活" tag="秘境探索"}
+::::detail-info{src="course/longdong-view-2.jpg" alt="longdong-view" title="龍洞一日海陸生活" tag="秘境探索" link="https://forms.gle/PwictsmDwAGdZefy7"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="活動時數"}
 一天
 ::

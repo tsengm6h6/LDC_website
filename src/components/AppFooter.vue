@@ -6,15 +6,32 @@
         <div>
           <NuxtLink to="/" class="flex items-center font-bold">
             <img
-              src="@/assets/image/logo.png"
+              src="@/assets/image/logo-gray.png"
               alt="logo"
               class="w-16 object-contain object-center" />
             <span class="text-lg font-bold">龍洞岬</span>
           </NuxtLink>
           <div class="ml-4 mt-1 flex items-center gap-2">
-            <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />
-            <Icon name="ri:instagram-line" size="24" color="#FDFDFD" />
-            <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />
+            <a href="https://line.me/R/ti/p/%40843eetrw" target="_blank" rel="noopener noreferrer">
+              <img
+                class="relative top-[2px] text-main-bg-white"
+                src="@/assets/image/line-icon.svg"
+                alt="line-icon"
+                width="20"
+                height="20" />
+            </a>
+            <a
+              href="https://www.instagram.com/longdongjia1_7/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon name="ri:instagram-line" size="24" color="#FDFDFD" />
+            </a>
+            <a
+              href="https://www.facebook.com/dragon49/?ref=page_internal"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />
+            </a>
           </div>
           <div class="mt-4 text-main-gray">
             <p class="my-1 ml-4 text-sm">新北市貢寮區龍洞街1-5號</p>
@@ -48,7 +65,7 @@
       <div class="mt-8 w-full">
         <hr />
         <p class="mt-4 text-center text-xs font-extralight text-main-gray">
-          © 2021 Bang Diving. All rights reserved.
+          Copyright © 2023 Longdongcape. All rights reserved.
         </p>
       </div>
     </div>

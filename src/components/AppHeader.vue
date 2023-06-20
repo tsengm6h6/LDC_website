@@ -4,7 +4,7 @@
       <div class="container mx-auto flex items-center justify-between px-4 md:w-full">
         <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
           <img
-            src="@/assets/image/logo-dark.svg"
+            src="@/assets/image/logo-gray.png"
             alt="logo"
             class="w-14 object-contain object-center md:w-20" />
           <span class="text-lg font-bold text-main-dark">龍洞岬</span>
@@ -27,7 +27,7 @@
         <div class="container mx-auto flex items-center px-4 md:w-full">
           <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
             <img
-              src="@/assets/image/logo-dark.svg"
+              src="@/assets/image/logo-gray.png"
               alt="logo"
               class="w-14 object-contain object-center md:w-20" />
             <span class="hidden text-2xl font-bold text-main-dark md:inline">龍洞岬</span>

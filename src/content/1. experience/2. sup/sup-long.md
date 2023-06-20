@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="/course/sup.jpg" alt="SUP" title="3 小時龍洞灣外 SUP 立槳" tag="親子同樂"}
+::::detail-info{src="/course/sup.jpg" alt="SUP" title="3 小時龍洞灣外 SUP 立槳" tag="親子同樂" link="https://forms.gle/M9YHUSa4Rf95m3Rv8"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 3 小時
 ::

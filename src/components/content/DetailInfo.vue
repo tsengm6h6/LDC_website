@@ -19,7 +19,9 @@
         <!-- Icon Info -->
         <slot />
       </div>
-      <button class="btn btn-secondary mt-4 w-full md:mt-0">立即報名</button>
+      <a class="block w-full" :href="link" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-secondary mt-4 w-full md:mt-0">立即報名</button>
+      </a>
     </div>
   </div>
 </template>
@@ -39,6 +41,10 @@
       required: true,
     },
     tag: {
+      type: String,
+      default: '',
+    },
+    link: {
       type: String,
       default: '',
     },

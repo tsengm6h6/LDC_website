@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="/course/snorkeling.jpg" alt="snorkeling" title="3 小時龍洞灣內浮潛" tag="秘境探索"}
+::::detail-info{src="/course/snorkeling.jpg" alt="snorkeling" title="3 小時龍洞灣內浮潛" tag="秘境探索" link="https://forms.gle/AgJScC89pf2KvjMC9"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 3 小時
 ::
