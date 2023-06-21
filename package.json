@@ -4,6 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port=8080",
+    "start": "NODE_ENV=production nuxt start",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -12,7 +13,7 @@
     "prettier": "prettier --check .",
     "prettier:list": "prettier --list-different .",
     "prettier:fix": "prettier --write --list-different .",
-    "pm2-start": "pm2 start nuxt -c '0 0 * * *' --name longdong-front -- start --prot=8080"
+    "pm2-start": "pm2 start nuxt -c '0 0 * * *' --name ldc_website -- start"
   },
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
