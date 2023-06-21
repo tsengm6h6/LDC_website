@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="/course/rock-climbing.jpg" alt="rock-climbing" title="6 小時龍洞岩場體驗攀岩" tag="挑戰自我"}
+::::detail-info{src="/course/rock-climbing.jpg" alt="rock-climbing" title="6 小時龍洞岩場體驗攀岩" tag="挑戰自我" link="https://forms.gle/HHZ95tWMoE5PzwWDA"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 6 小時
 ::
