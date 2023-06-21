@@ -7,7 +7,7 @@
             src="@/assets/image/logo-gray.png"
             alt="logo"
             class="w-14 object-contain object-center md:w-20" />
-          <span class="text-lg font-bold text-main-dark">龍洞岬</span>
+          <span class="text-xl font-bold text-main-dark">龍洞岬</span>
         </NuxtLink>
         <button
           class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary p-2 text-white shadow md:hidden"
@@ -27,13 +27,13 @@
         <div class="container mx-auto flex items-center px-4 md:w-full">
           <NuxtLink
             to="/"
-            class="ml-auto flex items-center py-4 font-bold md:py-0"
+            class="ml-auto flex items-center py-4 font-bold md:ml-0 md:py-0"
             @click="emit('toggle-menu', false)">
             <img
               src="@/assets/image/logo-gray.png"
               alt="logo"
               class="w-14 object-contain object-center md:w-20" />
-            <span class="text-xl font-bold text-main-dark md:inline">龍洞岬</span>
+            <span class="text-2xl font-bold text-main-dark md:inline">龍洞岬</span>
           </NuxtLink>
           <ul
             class="absolute left-0 right-0 top-full ml-auto h-screen bg-main-bg-white px-2 py-4 shadow-lg md:relative md:flex md:h-auto md:space-x-1 md:py-0 md:shadow-none lg:space-x-2">
