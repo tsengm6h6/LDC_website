@@ -1,7 +1,7 @@
 ---
 title: '3 小時龍洞跳水灣浮潛'
 description: '東北角 3 小時龍洞跳水灣浮潛，體驗不一樣的龍洞'
-img: /course/snorkeling.jpg
+img: snorkeling.jpg
 alt: snorkeling
 category: '體驗活動'
 subCategory: '浮潛體驗'
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="/course/snorkeling.jpg" alt="snorkeling" title="3 小時龍洞灣內浮潛" tag="秘境探索" link="https://forms.gle/AgJScC89pf2KvjMC9"}
+::::detail-info{src="snorkeling.jpg" alt="snorkeling" title="3 小時龍洞灣內浮潛" tag="秘境探索" link="https://forms.gle/AgJScC89pf2KvjMC9"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 3 小時
 ::

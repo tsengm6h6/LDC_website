@@ -1,7 +1,7 @@
 ---
 title: '1.5 小時龍洞灣內 SUP'
 description: 'SUP 立槳是一項結合了衝浪和划船的水上活動，不論大人、小孩，甚至毛小孩都適合參加！除了親手友善以外，更可以在過程中享受龍洞灣的獨特美景，絕對是家庭、朋友一起出遊的活動好選擇！'
-img: /course/sup-2.jpg
+img: sup-2.jpg
 alt: SUP
 category: '體驗活動'
 subCategory: 'SUP 立槳'
@@ -15,7 +15,7 @@ navigation:
 ::detail-container
 
 #info
-::::detail-info{src="/course/sup-2.jpg" alt="SUP" title="1.5 小時龍洞灣內 SUP 立槳" tag="親子同樂" link="https://forms.gle/otBRC7C4QGiryirH9"}
+::::detail-info{src="sup-2.jpg" alt="SUP" title="1.5 小時龍洞灣內 SUP 立槳" tag="親子同樂" link="https://forms.gle/otBRC7C4QGiryirH9"}
 ::info-icon{icon="material-symbols:alarm-outline-rounded" title="課程時數"}
 1.5 小時
 ::
