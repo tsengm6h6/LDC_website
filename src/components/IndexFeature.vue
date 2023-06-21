@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative -mt-4 rounded-tl-30 bg-main-bg-gray md:mt-0 md:rounded-none md:bg-main-bg-white">
+    class="section relative -mt-4 rounded-tl-30 bg-main-bg-gray md:mt-0 md:rounded-none md:bg-main-bg-white">
     <img
       src="@/assets/image/subtract-front-2.svg"
       alt="overlay"

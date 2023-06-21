@@ -1,5 +1,5 @@
 <template>
-  <section class="relative mt-8 rounded-tr-60 bg-main-bg-gray md:mt-0 md:rounded-none">
+  <section class="section relative mt-8 rounded-tr-60 bg-main-bg-gray md:mt-0 md:rounded-none">
     <div
       class="absolute right-0 top-0 h-[6%] w-[233px] rounded-tr-60 bg-primary md:hidden md:h-[8%]"></div>
     <div class="container mx-auto px-6 py-12 lg:py-24">

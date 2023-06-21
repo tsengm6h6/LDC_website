@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-main-bg-dark text-main-bg-white">
+  <section class="section bg-main-bg-dark text-main-bg-white">
     <div class="container mx-auto px-6 pt-12 lg:pt-24">
       <h3 class="mb-4">最豐富的活動選擇</h3>
       <p class="text-base leading-relaxed tracking-wide md:text-lg">

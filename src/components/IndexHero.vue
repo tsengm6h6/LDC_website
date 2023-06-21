@@ -1,6 +1,6 @@
 <template>
   <!-- Hero -->
-  <section class="md:pt-[55px]">
+  <section class="section md:pt-[55px]">
     <div class="flex min-h-[55vh] justify-center lg:min-h-[45vh]">
       <div
         class="hero-bg animate__animated animate__fadeIn relative flex items-center px-6 md:w-11/12 md:px-0 lg:w-3/4">

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section class="section relative">
     <div class="container mx-auto px-6 py-12">
       <div class="flex flex-col items-start justify-between gap-5 md:flex-row">
         <div class="mb-8 w-full md:mb-0 md:w-1/2">

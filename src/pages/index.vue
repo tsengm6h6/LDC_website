@@ -1,7 +1,7 @@
 <template>
   <div>
-    <IndexHero id="hero" @scroll-to="scrollTo" />
-    <IndexFeature id="feature" />
+    <IndexHero id="hero" class="show" @scroll-to="scrollTo" />
+    <IndexFeature id="feature" class="show" />
     <IndexProposal id="proposal" />
     <IndexEquipment id="equipment" />
     <IndexActivities id="activities" />
@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
   const scrollTo = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -18,32 +18,36 @@
     }
   }
 
+  const showSections = () => {
+    const sections = document.querySelectorAll('.section')
+    const windowHeight = window.innerHeight
+    const scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+
+    sections.forEach(function (section) {
+      const offsetTop = section.offsetTop
+
+      if (scrollPosition + windowHeight >= offsetTop) {
+        section.classList.add('show')
+      }
+    })
+  }
+
   onMounted(() => {
-    // const observer = new IntersectionObserver(
-    //   (entries) => {
-    //     entries.forEach((entry) => {
-    //       if (entry.isIntersecting) {
-    //         entry.target.classList.add('show')
-    //         observer.unobserve(entry.target)
-    //       }
-    //     })
-    //   },
-    //   {
-    //     rootMargin: '48px',
-    //     threshold: 0.3,
-    //   }
-    // )
-    // const sections = document.querySelectorAll('section')
-    // sections.forEach((section) => {
-    //   observer.observe(section)
-    // })
+    window.addEventListener('scroll', showSections)
+    window.addEventListener('load', showSections)
+  })
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('scroll', showSections)
+    window.removeEventListener('load', showSections)
   })
 </script>
 
 <style scoped>
   section {
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
   }
 
   .show {
@@ -52,8 +56,8 @@
   }
 
   section#proposal {
-    opacity: 1;
-    /* transform: translateX(-5%); */
+    opacity: 0;
+    transform: translateX(-5%);
     transition-delay: 2s;
     transition: all 0.5s ease-in-out;
   }
@@ -65,8 +69,8 @@
 
   @media (min-width: 768px) {
     section#proposal {
-      opacity: 1;
-      /* transform: translateY(-10%); */
+      opacity: 0;
+      transform: translateY(-10%);
       transition-delay: 2s;
       transition: all 2s ease-in-out;
     }
