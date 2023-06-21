@@ -3,7 +3,8 @@
     <div
       :class="`${
         isMenuToggled ? 'block' : 'hidden'
-      } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"></div>
+      } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"
+      @click="isMenuToggled = false" />
     <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
 
     <main class="relative min-h-screen">

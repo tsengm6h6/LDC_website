@@ -25,12 +25,15 @@
           isMenuToggled ? '' : ''
         }`">
         <div class="container mx-auto flex items-center px-4 md:w-full">
-          <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
+          <NuxtLink
+            to="/"
+            class="ml-auto flex items-center py-4 font-bold md:py-0"
+            @click="emit('toggle-menu', false)">
             <img
               src="@/assets/image/logo-gray.png"
               alt="logo"
               class="w-14 object-contain object-center md:w-20" />
-            <span class="hidden text-2xl font-bold text-main-dark md:inline">龍洞岬</span>
+            <span class="text-xl font-bold text-main-dark md:inline">龍洞岬</span>
           </NuxtLink>
           <ul
             class="absolute left-0 right-0 top-full ml-auto h-screen bg-main-bg-white px-2 py-4 shadow-lg md:relative md:flex md:h-auto md:space-x-1 md:py-0 md:shadow-none lg:space-x-2">
@@ -93,7 +96,6 @@
   })
 
   const emit = defineEmits(['scroll-to', 'toggle-menu'])
-  // const isMenuToggled = ref(false)
   const isTopOfPage = ref(true)
 
   const clickContact = () => {
@@ -107,10 +109,6 @@
     return isTopOfPage.value ? 'bg-transparent text-main-dark' : 'bg-main-bg-gray'
   })
 
-  // const subNavBackGround = computed(() => {
-  //   return isTopOfPage.value ? 'bg-white text-main-dark' : 'bg-main-bg-gray'
-  // })
-
   const handleScroll = () => {
     if (window.scrollY === 0) {
       isTopOfPage.value = true
@@ -120,18 +118,6 @@
   }
 
   const { data: nav } = useAsyncData('navigation', () => fetchContentNavigation())
-
-  // const showSubMenu = ref(false)
-  // const showSubMenuIndex = ref<number | null>(null)
-
-  // const toggleSubMenu = (i: number) => {
-  //   if (i === showSubMenuIndex.value) {
-  //     showSubMenu.value = !showSubMenu.value
-  //   } else {
-  //     showSubMenu.value = true
-  //     showSubMenuIndex.value = i
-  //   }
-  // }
 
   onMounted(() => {
     window.addEventListener('scroll', handleScroll)
