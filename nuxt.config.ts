@@ -19,4 +19,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  content: {
+    watch: {
+      ws: false,
+    },
+  },
 })
