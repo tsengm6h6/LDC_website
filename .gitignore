@@ -2,7 +2,7 @@ node_modules
 *.log*
 .nitro
 .cache
-.output
+#.output
 .env
 /dist
 .DS_Store
