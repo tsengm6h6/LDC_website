@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
   modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/content', 'nuxt-swiper'],
-  css: ['assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
