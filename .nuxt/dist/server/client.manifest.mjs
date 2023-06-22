@@ -1859,7 +1859,7 @@ export default {
   "pages/experience/snorkeling/[slug].vue": {
     "resourceType": "script",
     "module": true,
-    "file": "_slug_.18fdb833.js",
+    "file": "_slug_.ae8b4572.js",
     "imports": [
       "_BreadcrumbNav.ed747898.js",
       "../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
@@ -1884,7 +1884,7 @@ export default {
   "pages/experience/sup/[slug].vue": {
     "resourceType": "script",
     "module": true,
-    "file": "_slug_.ae8b4572.js",
+    "file": "_slug_.18fdb833.js",
     "imports": [
       "_BreadcrumbNav.ed747898.js",
       "../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.vue",
