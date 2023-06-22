@@ -72,7 +72,7 @@
       opacity: 0;
       transform: translateY(-10%);
       transition-delay: 2s;
-      transition: all 2s ease-in-out;
+      transition: all 1s ease-in-out;
     }
 
     section#proposal.show {
