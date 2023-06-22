@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   defineProps({
     icon: {
       type: String,
@@ -29,5 +29,3 @@
     },
   })
 </script>
-
-<style scoped></style>

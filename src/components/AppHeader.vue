@@ -87,7 +87,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   defineProps({
     isMenuToggled: {
       type: Boolean,
@@ -144,7 +144,7 @@
     .parent:hover .child {
       opacity: 1;
       height: auto;
-      overflow: none;
+      overflow: hidden;
       transform: translateY(0);
     }
     .child {

@@ -12,7 +12,7 @@
           <!-- right -->
           <div class="flex-1 px-2 py-8 md:px-4 md:py-10 md:pb-16">
             <!-- Breadcrumb -->
-            <Breadcrumb />
+            <BreadcrumbNav />
             <h1 class="mt-10 text-2xl">
               <span class="relative">
                 <span class="absolute -bottom-1 left-0 h-12 w-12 rounded-tr-30 bg-highlight"></span>
@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   defineProps({
     title: {
       type: String,
@@ -48,11 +48,6 @@
   // subMenu
   const { data: nav } = useAsyncData('navigation', () => fetchContentNavigation())
 
-  interface SubMenuItem {
-    title: string
-    _path: string
-  }
-
   const subMenu = nav.value?.reduce((prev, curr) => {
     if (!curr.children) {
       return [...prev, { title: curr.title, _path: curr._path }]
@@ -61,7 +56,7 @@
       .filter((o) => o.title !== curr.title)
       .map((o) => ({ title: o.title, _path: o._path }))
     return [...prev, ...child]
-  }, [] as SubMenuItem[])
+  }, [])
 </script>
 
 <style scoped>

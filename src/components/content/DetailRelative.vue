@@ -34,5 +34,3 @@
     }))
     .slice(0, 3)
 </script>
-
-<style lang="scss" scoped></style>

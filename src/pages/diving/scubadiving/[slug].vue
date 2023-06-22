@@ -1,11 +1,11 @@
 <template>
   <div class="container mx-auto px-4 py-8 md:px-6 md:py-12">
-    <Breadcrumb />
+    <BreadcrumbNav />
     <ContentDoc />
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const { path } = useRoute()
 
   const { data: page } = await useAsyncData(`content-${path}`, () =>

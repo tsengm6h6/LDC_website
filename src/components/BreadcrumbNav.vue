@@ -5,6 +5,7 @@
         <Icon name="ic:sharp-home" size="24" />
       </NuxtLink>
     </li>
+
     <template v-for="(b, i) in breadcrumb">
       <li v-if="b.path === path" :key="`breadcrumb-${i}-${b.title}`" class="hidden md:inline-block">
         <span class="text-[#8A6659]">
@@ -30,19 +31,14 @@
   </ul>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const { path } = useRoute()
   const { data: nav } = await useAsyncData('navigation', () => fetchContentNavigation())
 
-  interface MyObject {
-    [key: string]: string
-  }
-
-  const formatStructure = (arr: any, result: MyObject) => {
+  const formatStructure = (arr, result) => {
     for (const item of arr) {
       const path = item._path
-      const title = item.title
-      result[path] = title
+      result[path] = item.title
       if (item.children) {
         formatStructure(item.children, result)
       }
@@ -55,7 +51,7 @@
   const pathAndTitleMap = formatStructure(nav.value, {})
   const pathArray = path.split('/').filter((o) => o !== '')
 
-  const crumbs: any[] = []
+  const crumbs = []
 
   let route = ''
   pathArray.forEach((p) => {

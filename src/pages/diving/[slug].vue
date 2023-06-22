@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   definePageMeta({
     pageTransition: false,
   })
@@ -32,15 +32,7 @@
     .only(['title', 'description', 'img', 'alt', '_path'])
     .find()
 
-  interface Image {
-    src: string
-    alt: string
-    title: string
-    description: string
-    path: string
-  }
-
-  const getCourseList = (): Image[] => {
+  const getCourseList = () => {
     return (
       contentQuery
         .filter((c) => c._path !== path)

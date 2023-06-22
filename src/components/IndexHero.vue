@@ -67,7 +67,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const emit = defineEmits(['scroll-to'])
 </script>
 
@@ -83,8 +83,8 @@
   }
 
   .triangle {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-style: solid;
     border-width: 0 15px 15px 15px;
     border-color: transparent transparent #34b1b1 transparent;

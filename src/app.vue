@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   useSeoMeta({
     title: '【龍洞岬】北部水上活動 - 浮潛、水肺潛水、SUP、攀岩、自由潛水裝備租借',
     ogTitle: '【龍洞岬】北部水上活動 - 浮潛、水肺潛水、SUP、攀岩、自由潛水裝備租借',

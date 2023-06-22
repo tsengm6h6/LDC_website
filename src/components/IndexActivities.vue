@@ -51,7 +51,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const { data: courses } = await useAsyncData('courses', () =>
     queryContent().only(['title', 'img', '_path']).find()
   )
@@ -77,7 +77,7 @@
 </script>
 
 <style scoped>
-  ::v-deep.swiper {
+  :deep(.swiper) {
     padding-bottom: 40px !important;
     border-radius: 12px !important;
   }

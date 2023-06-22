@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import useAssets from '~/composables/useAssets'
 
   definePageMeta({
@@ -28,13 +28,6 @@
     ogDescription: page.value?.description || page.value?.title,
     ogImage: useAssets(page.value?.img) || useAssets('about-1.jpg'),
   })
-
-  interface Item {
-    src: string
-    alt: string
-    title: string
-    price: string
-  }
 
   const snorkelingItems = [
     {
@@ -255,7 +248,7 @@
     },
   ]
 
-  const getCurrentList = (pagePath: string) => {
+  const getCurrentList = (pagePath) => {
     switch (pagePath) {
       case '/equipment/renting-freediving':
         return freeDivingItems
@@ -266,7 +259,7 @@
     }
   }
 
-  let currentList: Item[] = []
+  let currentList = []
   if (page.value?._path) {
     currentList = getCurrentList(page.value._path)
   }

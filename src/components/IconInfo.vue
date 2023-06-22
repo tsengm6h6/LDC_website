@@ -13,11 +13,15 @@
   </div>
 </template>
 
-<script setup lang="ts">
-  const props = defineProps<{
-    icon: string
-    title: string
-  }>()
+<script setup>
+  const props = defineProps({
+    title: {
+      type: String,
+      required: true,
+    },
+    icon: {
+      type: String,
+      required: true,
+    },
+  })
 </script>
-
-<style scoped></style>

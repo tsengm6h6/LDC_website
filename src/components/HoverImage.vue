@@ -15,8 +15,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import useAssets from '~/composables/useAssets'
+
   const props = defineProps({
     src: {
       type: String,

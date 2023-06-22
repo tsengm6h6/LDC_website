@@ -16,18 +16,12 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import useAssets from '~/composables/useAssets'
-  type Equipment = {
-    src: string
-    alt: string
-    title: string
-    price: string
-  }
 
   defineProps({
     data: {
-      type: Array<Equipment>,
+      type: Array,
       required: true,
     },
   })

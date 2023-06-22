@@ -1,4 +1,5 @@
 import { filename } from 'pathe/utils'
+
 export default function useAssets(path: string) {
   let assets
   if (/(\.svg)$/i.exec(path)) assets = import.meta.glob('~/assets/image/**/*.svg', { eager: true })
@@ -13,14 +14,4 @@ export default function useAssets(path: string) {
     ])
   )
   return images[fileName]
-}
-
-export const getImages = () => {
-  const assets = import.meta.glob('~/assets/image/**/*.(svg|png|jpg|jpeg)', { eager: true })
-  return Object.fromEntries(
-    Object.entries(assets).map(([key, value]) => [
-      filename(key),
-      (value as Record<string, any>).default,
-    ])
-  )
 }

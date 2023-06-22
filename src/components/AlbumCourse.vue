@@ -11,18 +11,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
-  type Image = {
-    src: string
-    alt: string
-    title: string
-    description: string
-    path: string
-  }
-
+<script setup>
   defineProps({
     data: {
-      type: Array<Image>,
+      type: Array,
       required: true,
     },
   })

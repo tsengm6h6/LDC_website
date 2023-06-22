@@ -6,14 +6,33 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:vue/recommended",
     "@nuxtjs/eslint-config-typescript",
+    "plugin:vue/vue3-recommended",
     "prettier"
   ],
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
   "rules": {
-    "vue/multi-word-component-names": "off", // Nuxt3 有一些元件都會是單一名稱，例如404，所以最好是關掉
+    "prettier/prettier": "error",
+    //    "vue/multi-word-component-names": "off", // Nuxt3 有一些元件都會是單一名稱，例如404，所以最好是關掉
     // Only allow debugger in development
     "no-debugger": "off",
     "no-console": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/pages/**/*.{js,ts,vue}",
+        "**/layouts/**/*.{js,ts,vue}",
+        ",**/app.{js,ts,vue}",
+        "**/error.{js,ts,vue}"
+      ],
+      "rules": {
+        "vue/multi-word-component-names": "off"
+      }
+    }
+  ]
 }

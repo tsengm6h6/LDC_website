@@ -9,8 +9,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-  const scrollTo = (id: string) => {
+<script setup>
+  const scrollTo = (id) => {
     const element = document.getElementById(id)
     if (element) {
       const y = element.getBoundingClientRect().top + window.pageYOffset - 95
@@ -24,7 +24,7 @@
     const scrollPosition =
       window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
 
-    sections.forEach(function (section) {
+    sections.forEach((section) => {
       const offsetTop = section.offsetTop
 
       if (scrollPosition + windowHeight >= offsetTop) {

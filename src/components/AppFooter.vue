@@ -72,6 +72,6 @@
   </footer>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const { data: nav } = useAsyncData('navigation', () => fetchContentNavigation())
 </script>

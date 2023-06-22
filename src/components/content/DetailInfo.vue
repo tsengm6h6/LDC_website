@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   defineProps({
     src: {
       type: String,

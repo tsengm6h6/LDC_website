@@ -17,13 +17,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const isMenuToggled = ref(false)
-  const toggleMenu = (value: boolean) => {
+  const toggleMenu = (value) => {
     isMenuToggled.value = value
   }
 
-  const scrollTo = (id: string) => {
+  const scrollTo = (id) => {
     const element = document.getElementById(id)
     if (element) {
       const y = element.getBoundingClientRect().top + window.pageYOffset - 95

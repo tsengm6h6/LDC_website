@@ -25,7 +25,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
   onMounted(() => {
     const featureObserver = new IntersectionObserver(
       (entries) => {
@@ -49,7 +49,7 @@
 <style>
   .features {
     opacity: 1;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .features.show {

@@ -23,16 +23,17 @@
   </button>
 </template>
 
-<script setup lang="ts">
-  interface SubMenuItem {
-    title: string
-    _path: string
-  }
-
-  const props = defineProps<{
-    subMenu?: SubMenuItem[]
-    path: string
-  }>()
+<script setup>
+  const props = defineProps({
+    subMenu: {
+      type: Array,
+      default: () => [],
+    },
+    path: {
+      type: String,
+      required: true,
+    },
+  })
 
   const showMenu = ref(false)
   const toggleMenu = () => {

@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const props = defineProps({
     icon: {
       type: String,
@@ -46,5 +46,3 @@
     }
   })
 </script>
-
-<style scoped></style>

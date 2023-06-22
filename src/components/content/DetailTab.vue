@@ -22,12 +22,12 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   const { path } = useRoute()
   const router = useRouter()
 
   const tab = ref('detail')
-  const changeTab = (tabName: string) => {
+  const changeTab = (tabName) => {
     router.push({ path, query: { tab: tabName } })
     tab.value = tabName
   }
