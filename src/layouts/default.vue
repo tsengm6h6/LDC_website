@@ -1,23 +1,27 @@
 <template>
-  <div>
-    <div :class="`w-full ${isMenuToggled ? 'overflow-hidden' : 'overflow-auto'}`">
-      <div
-        :class="`${
-          isMenuToggled ? 'block' : 'hidden'
-        } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"
-        @click="isMenuToggled = false" />
-      <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
+  <div :class="`w-full ${isMenuToggled ? 'overflow-hidden' : 'overflow-auto'}`">
+    <div
+      :class="`${
+        isMenuToggled ? 'block' : 'hidden'
+      } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"
+      @click="isMenuToggled = false" />
+    <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
 
-      <main class="relative min-h-screen">
-        <div class="pt-[95px]">
-          <slot />
-        </div>
-      </main>
+    <main class="relative min-h-screen">
+      <div class="pt-[95px]">
+        <slot />
+      </div>
+    </main>
 
-      <AppFooter />
-    </div>
+    <AppFooter />
 
-    <div id="fb-root" />
+    <VueFbCustomerChat
+      id="fb-root"
+      page_id="342245025811970"
+      theme_color="#34b1b1"
+      locale="zh_TW"
+      logged_out_greeting="嗨~有問題可以私訊我喔！"
+      logged_in_greeting="您好，很高興為您服務" />
   </div>
 </template>
 
