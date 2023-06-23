@@ -14,7 +14,7 @@ p {
 }
 
 h2 {
-  @apply mb-2 text-xl font-semibold leading-snug tracking-wider md:text-2xl md:leading-relaxed;
+  @apply mb-2 text-xl font-medium leading-snug tracking-wider md:text-2xl md:leading-relaxed;
 }
 
 h3 {

@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row">
       <div class="w-full md:w-1/2">
         <h3 class="">現在就與我們聯繫！</h3>
-        <p class="mt-4 text-base leading-relaxed tracking-wider">
+        <p class="mt-4 text-lg leading-relaxed tracking-wider">
           想要預約課程、租借裝備、詢問下水等任何問題都歡迎聯絡我們
         </p>
         <div class="mt-8 flex flex-col items-start gap-6">

@@ -20,6 +20,11 @@
 </script>
 
 <style>
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+  }
+
   .page-enter-active,
   .page-leave-active {
     transition: all 0.2s ease-in-out;
