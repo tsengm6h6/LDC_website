@@ -8,7 +8,6 @@ import { unpackMeta, composableNames, getActiveHead, createServerHead as createS
 import { defineHeadPlugin } from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/@unhead/shared/dist/index.mjs';
 import { createMemoryHistory, createRouter, START_LOCATION, useRoute as useRoute$1, RouterView } from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/vue-router/dist/vue-router.node.mjs';
 import { hasProtocol, parseURL, joinURL } from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/ufo/dist/index.mjs';
-import VueFbCustomerChat from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/vue-fb-customer-chat/dist/vue-fb-customer-chat.cjs.js';
 import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs } from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/vue/server-renderer/index.mjs';
 import { defu } from 'file:///Users/apple/Desktop/website/LDC_website/node_modules/defu/dist/defu.mjs';
 import { a as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
@@ -488,36 +487,36 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyDetailContainer = defineAsyncComponent(() => import('./_nuxt/DetailContainer-15f24b2c.mjs').then((r) => r.default));
+const LazyDetailContainer = defineAsyncComponent(() => import('./_nuxt/DetailContainer-a5cf1c3a.mjs').then((r) => r.default));
 const LazyDetailImage = defineAsyncComponent(() => import('./_nuxt/DetailImage-ee63c520.mjs').then((r) => r.default));
 const LazyDetailInfo = defineAsyncComponent(() => import('./_nuxt/DetailInfo-e4ba52d4.mjs').then((r) => r.default));
-const LazyDetailRelative = defineAsyncComponent(() => import('./_nuxt/DetailRelative-bc7d0acd.mjs').then((r) => r.default));
-const LazyDetailTab = defineAsyncComponent(() => import('./_nuxt/DetailTab-e91cff40.mjs').then((r) => r.default));
-const LazyInfoIcon = defineAsyncComponent(() => import('./_nuxt/InfoIcon-9790397b.mjs').then((r) => r.default));
-const LazyInfoParagraph = defineAsyncComponent(() => import('./_nuxt/InfoParagraph-90f5e3c4.mjs').then((r) => r.default));
-const LazyContentDoc = defineAsyncComponent(() => import('./_nuxt/ContentDoc-980de50c.mjs').then((r) => r.default));
-const LazyContentList = defineAsyncComponent(() => import('./_nuxt/ContentList-f4ed6074.mjs').then((r) => r.default));
-const LazyContentNavigation = defineAsyncComponent(() => import('./_nuxt/ContentNavigation-d4011fa1.mjs').then((r) => r.default));
-const LazyContentQuery = defineAsyncComponent(() => import('./_nuxt/ContentQuery-beee60c5.mjs').then((r) => r.default));
-const LazyContentRenderer = defineAsyncComponent(() => import('./_nuxt/ContentRenderer-cc314936.mjs').then((r) => r.default));
-const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./_nuxt/ContentRendererMarkdown-1822c10b.mjs').then((r) => r.default));
-const LazyContentSlot = defineAsyncComponent(() => import('./_nuxt/ContentSlot-45352735.mjs').then((r) => r.default));
+const LazyDetailRelative = defineAsyncComponent(() => import('./_nuxt/DetailRelative-198d7518.mjs').then((r) => r.default));
+const LazyDetailTab = defineAsyncComponent(() => import('./_nuxt/DetailTab-b1a36be6.mjs').then((r) => r.default));
+const LazyInfoIcon = defineAsyncComponent(() => import('./_nuxt/InfoIcon-e09589fd.mjs').then((r) => r.default));
+const LazyInfoParagraph = defineAsyncComponent(() => import('./_nuxt/InfoParagraph-19662572.mjs').then((r) => r.default));
+const LazyContentDoc = defineAsyncComponent(() => import('./_nuxt/ContentDoc-0fd1b2df.mjs').then((r) => r.default));
+const LazyContentList = defineAsyncComponent(() => import('./_nuxt/ContentList-c1a3fc49.mjs').then((r) => r.default));
+const LazyContentNavigation = defineAsyncComponent(() => import('./_nuxt/ContentNavigation-0a6dd6c1.mjs').then((r) => r.default));
+const LazyContentQuery = defineAsyncComponent(() => import('./_nuxt/ContentQuery-98324861.mjs').then((r) => r.default));
+const LazyContentRenderer = defineAsyncComponent(() => import('./_nuxt/ContentRenderer-371ad78d.mjs').then((r) => r.default));
+const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./_nuxt/ContentRendererMarkdown-b18db033.mjs').then((r) => r.default));
+const LazyContentSlot = defineAsyncComponent(() => import('./_nuxt/ContentSlot-9037e378.mjs').then((r) => r.default));
 const LazyDocumentDrivenEmpty = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenEmpty-8aedc52c.mjs').then((r) => r.default));
 const LazyDocumentDrivenNotFound = defineAsyncComponent(() => import('./_nuxt/DocumentDrivenNotFound-b38df2d4.mjs').then((r) => r.default));
-const LazyMarkdown = defineAsyncComponent(() => import('./_nuxt/Markdown-3ef2e738.mjs').then((r) => r.default));
-const LazyProseA = defineAsyncComponent(() => import('./_nuxt/ProseA-3406cec5.mjs').then((r) => r.default));
+const LazyMarkdown = defineAsyncComponent(() => import('./_nuxt/Markdown-096aaf52.mjs').then((r) => r.default));
+const LazyProseA = defineAsyncComponent(() => import('./_nuxt/ProseA-b96438f1.mjs').then((r) => r.default));
 const LazyProseBlockquote = defineAsyncComponent(() => import('./_nuxt/ProseBlockquote-55c167e6.mjs').then((r) => r.default));
 const LazyProseCode = defineAsyncComponent(() => import('./_nuxt/ProseCode-5be7b32f.mjs').then((r) => r.default));
 const LazyProseCodeInline = defineAsyncComponent(() => import('./_nuxt/ProseCodeInline-6b25c940.mjs').then((r) => r.default));
 const LazyProseEm = defineAsyncComponent(() => import('./_nuxt/ProseEm-b2d5f529.mjs').then((r) => r.default));
-const LazyProseH1 = defineAsyncComponent(() => import('./_nuxt/ProseH1-546b0621.mjs').then((r) => r.default));
-const LazyProseH2 = defineAsyncComponent(() => import('./_nuxt/ProseH2-01379d1d.mjs').then((r) => r.default));
-const LazyProseH3 = defineAsyncComponent(() => import('./_nuxt/ProseH3-75511aae.mjs').then((r) => r.default));
-const LazyProseH4 = defineAsyncComponent(() => import('./_nuxt/ProseH4-a2a99178.mjs').then((r) => r.default));
-const LazyProseH5 = defineAsyncComponent(() => import('./_nuxt/ProseH5-2a9e34c8.mjs').then((r) => r.default));
-const LazyProseH6 = defineAsyncComponent(() => import('./_nuxt/ProseH6-cf1a4523.mjs').then((r) => r.default));
+const LazyProseH1 = defineAsyncComponent(() => import('./_nuxt/ProseH1-8070acc6.mjs').then((r) => r.default));
+const LazyProseH2 = defineAsyncComponent(() => import('./_nuxt/ProseH2-11b0f2bc.mjs').then((r) => r.default));
+const LazyProseH3 = defineAsyncComponent(() => import('./_nuxt/ProseH3-bdd29186.mjs').then((r) => r.default));
+const LazyProseH4 = defineAsyncComponent(() => import('./_nuxt/ProseH4-66197708.mjs').then((r) => r.default));
+const LazyProseH5 = defineAsyncComponent(() => import('./_nuxt/ProseH5-2f425253.mjs').then((r) => r.default));
+const LazyProseH6 = defineAsyncComponent(() => import('./_nuxt/ProseH6-5e432d61.mjs').then((r) => r.default));
 const LazyProseHr = defineAsyncComponent(() => import('./_nuxt/ProseHr-5da06891.mjs').then((r) => r.default));
-const LazyProseImg = defineAsyncComponent(() => import('./_nuxt/ProseImg-c86cea17.mjs').then((r) => r.default));
+const LazyProseImg = defineAsyncComponent(() => import('./_nuxt/ProseImg-f7d59a39.mjs').then((r) => r.default));
 const LazyProseLi = defineAsyncComponent(() => import('./_nuxt/ProseLi-205334a3.mjs').then((r) => r.default));
 const LazyProseOl = defineAsyncComponent(() => import('./_nuxt/ProseOl-6ee7c280.mjs').then((r) => r.default));
 const LazyProseP = defineAsyncComponent(() => import('./_nuxt/ProseP-50c949e5.mjs').then((r) => r.default));
@@ -529,8 +528,8 @@ const LazyProseTh = defineAsyncComponent(() => import('./_nuxt/ProseTh-4cfa0bd0.
 const LazyProseThead = defineAsyncComponent(() => import('./_nuxt/ProseThead-7f6891cd.mjs').then((r) => r.default));
 const LazyProseTr = defineAsyncComponent(() => import('./_nuxt/ProseTr-19e13c17.mjs').then((r) => r.default));
 const LazyProseUl = defineAsyncComponent(() => import('./_nuxt/ProseUl-27c3dfb1.mjs').then((r) => r.default));
-const LazyIcon = defineAsyncComponent(() => import('./_nuxt/Icon-f3127f2b.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./_nuxt/IconCSS-de90b4d3.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./_nuxt/Icon-f8e9aef6.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./_nuxt/IconCSS-c50bae40.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["DetailContainer", LazyDetailContainer],
   ["DetailImage", LazyDetailImage],
@@ -624,7 +623,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/contactus-87fee771.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contactus-ed200464.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.name) ?? "diving-slug",
@@ -632,7 +631,7 @@ const _routes = [
     meta: __nuxt_page_meta$3 || {},
     alias: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.alias) || [],
     redirect: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.redirect) || void 0,
-    component: () => import('./_nuxt/_slug_-57b4ff0e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-6a3cddea.mjs').then((m) => m.default || m)
   },
   {
     name: "diving-scubadiving-slug",
@@ -640,7 +639,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_slug_-574442be.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-837c9bd2.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.name) ?? "equipment-slug",
@@ -648,7 +647,7 @@ const _routes = [
     meta: __nuxt_page_meta$2 || {},
     alias: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.alias) || [],
     redirect: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.redirect) || void 0,
-    component: () => import('./_nuxt/_slug_-29ab276a.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-0965cb61.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) ?? "experience-slug",
@@ -656,7 +655,7 @@ const _routes = [
     meta: __nuxt_page_meta$1 || {},
     alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
     redirect: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect) || void 0,
-    component: () => import('./_nuxt/_slug_-6b082f4e.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-bd5067af.mjs').then((m) => m.default || m)
   },
   {
     name: "experience-rock-climbing-slug",
@@ -664,7 +663,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_slug_-0c067df2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-7da1775f.mjs').then((m) => m.default || m)
   },
   {
     name: "experience-snorkeling-slug",
@@ -672,7 +671,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_slug_-1afdc456.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-847c8964.mjs').then((m) => m.default || m)
   },
   {
     name: "experience-sup-slug",
@@ -680,7 +679,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_slug_-dec84ffc.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-d6cbfde9.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -688,7 +687,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-188731d9.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-82b4bed9.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "package-slug",
@@ -696,7 +695,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/_slug_-dd00b588.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-08b14bc7.mjs').then((m) => m.default || m)
   },
   {
     name: "package-day-trip-slug",
@@ -704,7 +703,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/_slug_-acedc6ab.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/_slug_-e817e59a.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -929,15 +928,11 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
     return { provide: { router } };
   }
 }, 1);
-const vue_fb_customer_chat_JIJYTAkI1q = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component("VueFbCustomerChat", VueFbCustomerChat);
-});
 const _plugins = [
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
   unhead_KgADcZ0jPj,
-  plugin,
-  vue_fb_customer_chat_JIJYTAkI1q
+  plugin
 ];
 const _wrapIf = (component, props, slots) => {
   props = props === true ? {} : props;
@@ -947,7 +942,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  default: () => import('./_nuxt/default-c0809380.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-c180f999.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",
@@ -1235,8 +1230,8 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/error-component-ca5d5a63.mjs').then((r) => r.default || r));
-    const IslandRenderer = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/island-renderer-947380d1.mjs').then((r) => r.default || r));
+    const ErrorComponent = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/error-component-77434806.mjs').then((r) => r.default || r));
+    const IslandRenderer = /* @__PURE__ */ defineAsyncComponent(() => import('./_nuxt/island-renderer-de9b544e.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     nuxtApp.ssrContext.url;

@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       ws: false,
     },
   },
-  plugins: [{ src: '~/plugins/vue-fb-customer-chat.js', ssr: false }],
+  plugins: [{ src: '~/plugins/vue-fb-customer-chat.js', mode: 'client', ssr: false }],
   routeRules: {
     '/equipment': { redirect: '/equipment/renting' },
   },
