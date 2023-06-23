@@ -17,12 +17,9 @@
     </div>
     <header
       :class="`fixed right-0 top-0 ${
-        isMenuToggled ? 'z-50 w-[60%] opacity-100' : 'z-0 w-0 opacity-0 md:z-50 md:opacity-100'
+        isMenuToggled ? 'z-50 w-[60%] opacity-100' : '-z-10 w-0 opacity-0 md:z-50 md:opacity-100'
       } md:w-full md:shadow-sm md:${navBackGround} origin-right transition-all duration-300`">
-      <nav
-        :class="`relative bg-main-bg-white shadow-sm transition-all delay-100 duration-200 ${
-          isMenuToggled ? '' : ''
-        }`">
+      <nav class="relative bg-main-bg-white shadow-sm transition-all delay-100 duration-200">
         <div class="container mx-auto flex items-center px-4 md:w-full">
           <NuxtLink
             to="/"
