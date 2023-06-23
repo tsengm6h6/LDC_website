@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container relative mx-auto py-8 md:px-6 md:py-12">
-      <SubMenuButton :sub-menu="subMenu" :path="path" />
+    <div class="relative mx-auto -mt-2 py-0 md:container md:mt-0 md:px-6 md:py-12">
+      <!-- <SubMenuButton :sub-menu="subMenu" :path="path" /> -->
       <div
         class="relative min-h-[80vh] max-w-full rounded-br-30 border-b-[24px] border-b-secondary bg-main-bg-gray md:rounded-tl-30">
         <span

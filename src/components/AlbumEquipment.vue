@@ -1,5 +1,6 @@
 <template>
-  <div class="grid-album mt-6 h-[60vh] gap-4 overflow-y-auto pb-4 pr-2 md:grid md:pr-4 md:pt-4">
+  <div
+    class="grid-album mt-6 min-h-[75vh] gap-4 overflow-y-auto pb-4 pr-2 md:grid md:h-[60vh] md:pr-4 md:pt-4">
     <div
       v-for="(item, i) in data"
       :key="`equip-${i}-${item.title}`"
@@ -12,7 +13,7 @@
         height="120px"
         fit="inside"
         quality="90"
-        :alt="alt"
+        :alt="item.alt"
         class="h-16 w-16 rounded bg-white object-contain object-center drop-shadow-[2px_2px_1px_rgba(0,0,0,0.25)] md:h-20 md:w-20" />
       <div class="ml-4 flex-1">
         <p class="text-base font-bold md:text-lg">{{ item.title }}</p>

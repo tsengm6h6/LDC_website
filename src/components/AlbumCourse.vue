@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-6 h-[61vh] overflow-y-auto pr-2 pt-2">
+  <div class="mt-6 min-h-[75vh] overflow-y-auto pr-2 pt-2 md:h-[61vh]">
     <div class="grid grid-cols-6 gap-2 md:gap-3">
       <div
         v-for="(course, i) in data"
