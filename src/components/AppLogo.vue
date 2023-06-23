@@ -7,5 +7,5 @@
     fit="contain"
     format="png"
     quality="90"
-    class="w-14 object-contain object-center md:w-20" />
+    class="h-14 w-14 object-contain object-center md:h-20 md:w-20" />
 </template>
