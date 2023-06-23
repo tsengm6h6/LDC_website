@@ -912,7 +912,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  default: () => import("./_nuxt/default-e81d7a72.js").then((m) => m.default || m)
+  default: () => import("./_nuxt/default-858bb263.js").then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",
@@ -1186,7 +1186,7 @@ const _sfc_main$1 = {
         }),
         _: 1
       }, _parent));
-      _push(`<div id="fb-root"></div></div>`);
+      _push(`</div>`);
     };
   }
 };

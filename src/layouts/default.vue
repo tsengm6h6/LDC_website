@@ -1,19 +1,23 @@
 <template>
-  <div :class="`w-full ${isMenuToggled ? 'overflow-hidden' : 'overflow-auto'}`">
-    <div
-      :class="`${
-        isMenuToggled ? 'block' : 'hidden'
-      } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"
-      @click="isMenuToggled = false" />
-    <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
+  <div>
+    <div :class="`w-full ${isMenuToggled ? 'overflow-hidden' : 'overflow-auto'}`">
+      <div
+        :class="`${
+          isMenuToggled ? 'block' : 'hidden'
+        } fixed z-40 h-screen w-full bg-black/20 backdrop-blur-sm md:z-0 md:hidden`"
+        @click="isMenuToggled = false" />
+      <AppHeader :is-menu-toggled="isMenuToggled" @toggle-menu="toggleMenu" @scroll-to="scrollTo" />
 
-    <main class="relative min-h-screen">
-      <div class="pt-[95px]">
-        <slot />
-      </div>
-    </main>
+      <main class="relative min-h-screen">
+        <div class="pt-[95px]">
+          <slot />
+        </div>
+      </main>
 
-    <AppFooter />
+      <AppFooter />
+    </div>
+
+    <div id="fb-root" />
   </div>
 </template>
 
