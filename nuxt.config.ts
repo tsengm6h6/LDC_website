@@ -24,4 +24,5 @@ export default defineNuxtConfig({
       ws: false,
     },
   },
+  plugins: [{ src: '~/plugins/vue-fb-customer-chat.js', mode: 'client', ssr: false }],
 })
