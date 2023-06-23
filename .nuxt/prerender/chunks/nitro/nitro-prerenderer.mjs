@@ -60,6 +60,12 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/equipment": {
+        "redirect": {
+          "to": "/equipment/renting",
+          "statusCode": 307
+        }
+      },
       "/_nuxt/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -71,7 +77,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1687481107743,
+      "integrity": 1687482874962,
       "experimental": {
         "stripQueryParameters": false,
         "clientDB": false,
@@ -3805,7 +3811,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _sJJ7sy, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _sJJ7sy, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _sJJ7sy, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1687481107743.json', handler: _nz5vAJ, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1687482874962.json', handler: _nz5vAJ, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _kzdrG5, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _kzdrG5, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _kzdrG5, lazy: false, middleware: false, method: "get" },

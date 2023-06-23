@@ -14,8 +14,6 @@
     </main>
 
     <AppFooter />
-
-    <div id="fb-root" />
   </div>
 </template>
 
