@@ -906,7 +906,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  default: () => import("./_nuxt/default-c180f999.js").then((m) => m.default || m)
+  default: () => import("./_nuxt/default-49e2aad4.js").then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",
