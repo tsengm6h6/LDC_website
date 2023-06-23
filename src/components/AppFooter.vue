@@ -12,7 +12,11 @@
             <span class="text-lg font-bold">龍洞岬</span>
           </NuxtLink>
           <div class="ml-4 mt-1 flex items-center gap-2">
-            <a href="https://line.me/R/ti/p/%40843eetrw" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://line.me/R/ti/p/%40843eetrw"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-[24px]">
               <img
                 class="relative top-[2px] text-main-bg-white"
                 src="@/assets/image/line-icon.svg"
