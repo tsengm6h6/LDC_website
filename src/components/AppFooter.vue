@@ -5,33 +5,34 @@
         <!-- Left -->
         <div>
           <NuxtLink to="/" class="flex items-center font-bold">
-            <img
-              src="@/assets/image/logo-gray.png"
-              alt="logo"
-              class="w-16 object-contain object-center" />
+            <AppLogo />
             <span class="text-lg font-bold">龍洞岬</span>
           </NuxtLink>
           <div class="ml-4 mt-1 flex items-center gap-2">
             <a
               href="https://line.me/R/ti/p/%40843eetrw"
+              aria-label="Forward to Official Line"
               target="_blank"
               rel="noopener noreferrer"
               class="w-[24px]">
-              <img
+              <nuxt-img
                 class="relative top-[2px] text-main-bg-white"
-                src="@/assets/image/line-icon.svg"
+                src="/line-icon.svg"
+                loading="lazy"
                 alt="line-icon"
                 width="20"
                 height="20" />
             </a>
             <a
               href="https://www.instagram.com/longdongjia1_7/?hl=en"
+              aria-label="Forward to Instagram"
               target="_blank"
               rel="noopener noreferrer">
               <Icon name="ri:instagram-line" size="24" color="#FDFDFD" />
             </a>
             <a
               href="https://www.facebook.com/dragon49/?ref=page_internal"
+              aria-label="Forward to Facebook"
               target="_blank"
               rel="noopener noreferrer">
               <Icon name="mdi:facebook-box" size="24" color="#FDFDFD" />

@@ -15,3 +15,8 @@ export default function useAssets(path: string) {
   )
   return images[fileName]
 }
+
+export function usefolderPath(path: string) {
+  const imagePath = useAssets(path)
+  return imagePath.split('/').slice(4).join('/')
+}

@@ -1,11 +1,17 @@
 <template>
   <div class="h-full w-full flex-auto overflow-hidden rounded-tl-60">
-    <img :src="useAssets(src)" :alt="alt" class="h-full w-full object-cover object-center" />
+    <nuxt-img
+      preload
+      :src="usefolderPath(src)"
+      format="webp"
+      sizes="sm:300px md:350px lg:800px"
+      :alt="alt"
+      class="h-full w-full object-cover object-center" />
   </div>
 </template>
 
 <script setup>
-  import useAssets from '~/composables/useAssets'
+  import { usefolderPath } from '~/composables/useAssets'
 
   defineProps({
     src: {

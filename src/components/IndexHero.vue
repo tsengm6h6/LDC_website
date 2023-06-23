@@ -54,12 +54,14 @@
             </span>
           </div>
         </div>
-        <img
-          src="@/assets/image/substract-front-xs.svg"
+        <nuxt-img
+          loading="lazy"
+          src="/substract-front-xs.svg"
           alt="overlay"
           class="animate__animated animate__slideInRight absolute right-0 top-[4%] md:hidden" />
-        <img
-          src="@/assets/image/substract-back-xs.svg"
+        <nuxt-img
+          loading="lazy"
+          src="/substract-back-xs.svg"
           alt="overlay"
           class="animate__animated animate__slideInLeft absolute bottom-[12px] left-0 md:hidden" />
       </div>

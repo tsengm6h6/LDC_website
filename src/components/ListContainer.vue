@@ -24,12 +24,14 @@
         </div>
       </div>
     </div>
-    <img
-      src="@/assets/image/subtract-front-2.svg"
+    <nuxt-img
+      loading="lazy"
+      src="/subtract-front-2.svg"
       alt="overlay"
       class="absolute right-0 top-[100px] hidden opacity-80 lg:inline-block" />
-    <img
-      src="@/assets/image/subtract-back-2.svg"
+    <nuxt-img
+      loading="lazy"
+      src="/subtract-back-2.svg"
       alt="overlay"
       class="absolute bottom-[72px] left-0 hidden opacity-80 lg:inline-block" />
   </div>

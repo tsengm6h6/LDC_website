@@ -41,9 +41,14 @@
           <div class="flex items-end">
             <div
               class="h-[200px] flex-auto overflow-hidden rounded-tl-30 md:h-[304px] md:w-[354px] md:rounded-tl-60">
-              <img
-                src="@/assets/image/course/longdong-view-1.jpg"
-                alt=""
+              <nuxt-img
+                loading="lazy"
+                src="/course/longdong-view-1.jpg"
+                alt="proposal-image"
+                format="webp"
+                sizes="sm:100vw md:100vw lg:350px"
+                quality="80"
+                fit="cover"
                 class="inline-block h-full w-full object-cover object-center" />
             </div>
             <span
@@ -54,17 +59,23 @@
               class="mr-2 inline-block h-[160px] w-[80px] shrink grow-0 rounded-bl-30 bg-secondary md:mr-3 md:h-[172px] md:w-[116px] md:rounded-bl-60"></span>
             <div
               class="h-[290px] w-[354px] flex-auto overflow-hidden rounded-br-30 md:h-[423px] md:rounded-br-60">
-              <img
-                src="@/assets/image/banner-2.jpg"
-                alt=""
+              <nuxt-img
+                loading="lazy"
+                src="/proposal-2.jpg"
+                alt="proposal-image"
+                format="webp"
+                sizes="sm:100vw md:100vw lg:350px"
+                quality="80"
+                fit="cover"
                 class="inline-block h-full w-full object-cover object-center" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <img
-      src="@/assets/image/subtract-back-2.svg"
+    <nuxt-img
+      loading="lazy"
+      src="/subtract-back-2.svg"
       alt="overlay"
       class="absolute bottom-0 left-0 hidden lg:inline-block" />
   </section>

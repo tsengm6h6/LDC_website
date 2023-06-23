@@ -1,8 +1,9 @@
 <template>
   <section
     class="section relative -mt-4 rounded-tl-30 bg-main-bg-gray md:mt-0 md:rounded-none md:bg-main-bg-white">
-    <img
-      src="@/assets/image/subtract-front-2.svg"
+    <nuxt-img
+      loading="lazy"
+      src="/subtract-front-2.svg"
       alt="overlay"
       class="absolute bottom-0 right-0 hidden lg:inline-block" />
     <div class="container mx-auto px-6 py-12 lg:py-24">

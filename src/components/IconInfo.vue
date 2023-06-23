@@ -5,7 +5,7 @@
       <Icon :name="props.icon" size="30" color="#3F3E3E" />
     </div>
     <div class="ml-4 text-base leading-relaxed tracking-wider">
-      <h5 class="font-medium">{{ props.title }}</h5>
+      <p class="font-medium">{{ props.title }}</p>
       <p class="">
         <slot />
       </p>

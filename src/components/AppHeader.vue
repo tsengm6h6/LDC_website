@@ -3,13 +3,12 @@
     <div :class="`fixed right-0 top-0 flex w-full ${navBackGround} z-30 shadow-sm md:hidden`">
       <div class="container mx-auto flex items-center justify-between px-4 md:w-full">
         <NuxtLink to="/" class="flex items-center py-4 font-bold md:py-0">
-          <img
-            src="@/assets/image/logo-gray.png"
-            alt="logo"
-            class="w-14 object-contain object-center md:w-20" />
+          <AppLogo />
           <span class="text-xl font-bold text-main-dark">龍洞岬</span>
         </NuxtLink>
         <button
+          role="button"
+          aria-label="nav-toggle"
           class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary p-2 text-white shadow md:hidden"
           @click="emit('toggle-menu', true)">
           <Icon name="ci:hamburger-md" size="24" color="text-main-bg-white" />
@@ -29,10 +28,7 @@
             to="/"
             class="ml-auto flex items-center py-4 font-bold md:ml-0 md:py-0"
             @click="emit('toggle-menu', false)">
-            <img
-              src="@/assets/image/logo-gray.png"
-              alt="logo"
-              class="w-14 object-contain object-center md:w-20" />
+            <AppLogo />
             <span class="text-2xl font-bold text-main-dark md:inline">龍洞岬</span>
           </NuxtLink>
           <ul

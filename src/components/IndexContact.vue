@@ -20,6 +20,7 @@
       <div class="mt-8 h-[483px] w-full overflow-hidden rounded-md md:ml-6 md:mt-0 md:w-1/2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6922214563933!2d121.91652557569961!3d25.112277877765788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d439e07d52ec9%3A0xabcd6322b8d21227!2z6b6N5rSe5bKs6KOd5YKZ5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1686813235795!5m2!1szh-TW!2stw"
+          title="google-map"
           width="600"
           height="500"
           style="border: 0"
