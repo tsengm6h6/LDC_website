@@ -949,6 +949,94 @@ const __nuxt_component_0 = /* @__PURE__ */ defineComponent({
     };
   }
 });
+const __nuxt_component_1 = /* @__PURE__ */ defineComponent({
+  name: "NuxtLoadingIndicator",
+  props: {
+    throttle: {
+      type: Number,
+      default: 200
+    },
+    duration: {
+      type: Number,
+      default: 2e3
+    },
+    height: {
+      type: Number,
+      default: 3
+    },
+    color: {
+      type: [String, Boolean],
+      default: "repeating-linear-gradient(to right,#00dc82 0%,#34cdfe 50%,#0047e1 100%)"
+    }
+  },
+  setup(props, { slots }) {
+    const indicator = useLoadingIndicator({
+      duration: props.duration,
+      throttle: props.throttle
+    });
+    const nuxtApp = useNuxtApp();
+    nuxtApp.hook("page:start", indicator.start);
+    nuxtApp.hook("page:finish", indicator.finish);
+    nuxtApp.hook("vue:error", indicator.finish);
+    return () => h("div", {
+      class: "nuxt-loading-indicator",
+      style: {
+        position: "fixed",
+        top: 0,
+        right: 0,
+        left: 0,
+        pointerEvents: "none",
+        width: "auto",
+        height: `${props.height}px`,
+        opacity: indicator.isLoading.value ? 1 : 0,
+        background: props.color || void 0,
+        backgroundSize: `${100 / indicator.progress.value * 100}% auto`,
+        transform: `scaleX(${indicator.progress.value}%)`,
+        transformOrigin: "left",
+        transition: "transform 0.1s, height 0.4s, opacity 0.4s",
+        zIndex: 999999
+      }
+    }, slots);
+  }
+});
+function useLoadingIndicator(opts) {
+  const progress = ref(0);
+  const isLoading = ref(false);
+  computed(() => 1e4 / opts.duration);
+  let _timer = null;
+  let _throttle = null;
+  function start() {
+    clear();
+    progress.value = 0;
+    if (opts.throttle && false) {
+      _throttle = setTimeout(() => {
+        isLoading.value = true;
+      }, opts.throttle);
+    } else {
+      isLoading.value = true;
+    }
+  }
+  function finish() {
+    progress.value = 100;
+    _hide();
+  }
+  function clear() {
+    clearInterval(_timer);
+    clearTimeout(_throttle);
+    _timer = null;
+    _throttle = null;
+  }
+  function _hide() {
+    clear();
+  }
+  return {
+    progress,
+    isLoading,
+    start,
+    finish,
+    clear
+  };
+}
 const interpolatePath = (route, match) => {
   return match.path.replace(/(:\w+)\([^)]+\)/g, "$1").replace(/(:\w+)[?+*]/g, "$1").replace(/:\w+/g, (r) => {
     var _a;
@@ -966,7 +1054,7 @@ const generateRouteKey = (routeProps, override) => {
 const wrapInKeepAlive = (props, children) => {
   return { default: () => children };
 };
-const __nuxt_component_1 = /* @__PURE__ */ defineComponent({
+const __nuxt_component_2 = /* @__PURE__ */ defineComponent({
   name: "NuxtPage",
   inheritAttrs: false,
   props: {
@@ -1069,14 +1157,23 @@ const _sfc_main$1 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLayout = __nuxt_component_0;
-      const _component_NuxtPage = __nuxt_component_1;
+      const _component_NuxtLoadingIndicator = __nuxt_component_1;
+      const _component_NuxtPage = __nuxt_component_2;
       _push(`<div${ssrRenderAttrs(_attrs)}>`);
       _push(ssrRenderComponent(_component_NuxtLayout, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
+            _push2(ssrRenderComponent(_component_NuxtLoadingIndicator, {
+              color: "#34b1b1",
+              height: 5
+            }, null, _parent2, _scopeId));
             _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
           } else {
             return [
+              createVNode(_component_NuxtLoadingIndicator, {
+                color: "#34b1b1",
+                height: 5
+              }),
               createVNode(_component_NuxtPage)
             ];
           }
